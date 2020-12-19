@@ -26,7 +26,7 @@ def get_filters():
     city = '' #Create an empty variable for storing the user choice
     #This loop shall be run to be ensure that the user has entered the correct input and if not the loop will be repeated
     while city not in CITY_DATA.keys():
-        print("\nWelcome, Please choose the city: (Chicago, New York City or Washington)")
+        print("\nWelcome, Please choose the city: (Chicago, New York or Washington)")
         city = input().lower() #Take the user choice and convert it to a lower case
 
         if city not in CITY_DATA.keys():
