@@ -1,13 +1,12 @@
 ### Date created
-Include the date you created this project and README file.
+Dec-19-2020.
 
 ### Project Title
-Replace the Project Title
+git commands project
 
 ### Description
-Describe what your project is about and what it does
+this project about how to use git commands with github and how we can control data follow
 
-### Files used
-Include the files used
 
-### Credits
+
+
