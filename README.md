@@ -8,5 +8,8 @@ git commands project
 this project about how to use git commands with github and how we can control data follow
 
 
+any comment
+you can contact me by this email:
+a.e.otb@hotmail.com
 
 
