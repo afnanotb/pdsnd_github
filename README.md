@@ -1,15 +1,23 @@
 ### Date created
+<<<<<<< HEAD
 Include the date you created this project and README file.
 <h1> hi </h1>
+||||||| merged common ancestors
+Include the date you created this project and README file.
+
+=======
+Dec-19-2020.
+
+>>>>>>> documentation
 ### Project Title
-Replace the Project Title
+git commands project
 
 ### Description
-Describe what your project is about and what it does
+this project about how to use git commands with github and how we can control data follow
 
-### Files used
-Include the files used
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+any comment
+you can contact me by this email:
+a.e.otb@hotmail.com
+
 
