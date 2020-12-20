@@ -1,0 +1,1685 @@
+Last login: Sat Dec 19 00:09:35 on ttys000
+afnanotb (documentation) ~
+$ cd
+afnanotb (documentation) ~
+$ ls
+Applications		Music			js
+Desktop			Pictures		my-travel-plans
+Documents		Public			my_project
+Downloads		course-git-blog-project	new-git-project
+Library			css			readme.html
+Movies			index.html		udacity-git-course
+afnanotb (documentation) ~
+$ git add readme.html
+afnanotb (documentation +) ~
+$ git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+afnanotb (documentation +) ~
+$ git status
+On branch documentation
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   readme.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.CFUserTextEncoding
+	.DDPreview/
+	.DS_Store
+	.Trash/
+	.anaconda/
+	.android/
+	.atom/
+	.bash_history
+	.bash_profile
+	.bash_sessions/
+	.bashr
+	.condarc
+	.gitconfig
+	.idlerc/
+	.python_history
+	.udacity-terminal-config/
+	.viminfo
+	Applications/
+	Desktop/
+	Documents/
+	Downloads/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	course-git-blog-project/
+	css/.app.css.swo
+	my_project/
+	new-git-project/
+
+afnanotb (documentation +) ~
+$ git commit -m"creating documentation"
+[documentation c3f7782] creating documentation
+ 1 file changed, 5 insertions(+)
+ create mode 100644 readme.html
+afnanotb (documentation) ~
+$ git status
+On branch documentation
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.CFUserTextEncoding
+	.DDPreview/
+	.DS_Store
+	.Trash/
+	.anaconda/
+	.android/
+	.atom/
+	.bash_history
+	.bash_profile
+	.bash_sessions/
+	.bashr
+	.condarc
+	.gitconfig
+	.idlerc/
+	.python_history
+	.udacity-terminal-config/
+	.viminfo
+	Applications/
+	Desktop/
+	Documents/
+	Downloads/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	course-git-blog-project/
+	css/.app.css.swo
+	my_project/
+	new-git-project/
+
+nothing added to commit but untracked files present (use "git add" to track)
+afnanotb (documentation) ~
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+afnanotb (documentation) ~
+$ cd
+afnanotb (documentation) ~
+$ git chechout main
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+afnanotb (documentation) ~
+$ branch main
+-bash: branch: command not found
+afnanotb (documentation) ~
+$ git branch main
+afnanotb (documentation) ~
+$ git checkout main
+Switched to branch 'main'
+afnanotb (main) ~
+$ gh repo clone afnanotb/bikeshare
+-bash: gh: command not found
+afnanotb (main) ~
+$ git remote
+origin
+afnanotb (main) ~
+$ git remote add origion https://github.com/afnanotb/bikeshare.git
+afnanotb (main) ~
+$ git pull origin master
+fatal: Couldn't find remote ref master
+afnanotb (main) ~
+$ git pull origin main
+fatal: Couldn't find remote ref main
+afnanotb (main) ~
+$ git remote add origin https://github.com/afnanotb/bikeshare.git
+fatal: remote origin already exists.
+afnanotb (main) ~
+$ git remote -v
+origin	https://github.com/afnanotb/my-travel.git (fetch)
+origin	https://github.com/afnanotb/my-travel.git (push)
+origion	https://github.com/afnanotb/bikeshare.git (fetch)
+origion	https://github.com/afnanotb/bikeshare.git (push)
+afnanotb (main) ~
+$ git remote set-url git@github.com:afnanotb/bikeshare.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+afnanotb (main) ~
+$ git remote -v
+origin	https://github.com/afnanotb/my-travel.git (fetch)
+origin	https://github.com/afnanotb/my-travel.git (push)
+origion	https://github.com/afnanotb/bikeshare.git (fetch)
+origion	https://github.com/afnanotb/bikeshare.git (push)
+afnanotb (main) ~
+$ git remote set-url git@github.com:afnanotb/bikeshare.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+afnanotb (main) ~
+$ git remote set-url --delete origion git@github.com:afnanotb/bikeshare.git
+fatal: could not unset 'remote.origion.url'
+afnanotb (main) ~
+$ pwd
+/Users/afnanotb
+afnanotb (main) ~
+$ ls -a
+.				.udacity-terminal-config
+..				.viminfo
+.CFUserTextEncoding		Applications
+.DDLocalBackups			Desktop
+.DDPreview			Documents
+.DS_Store			Downloads
+.Trash				Library
+.anaconda			Movies
+.android			Music
+.atom				Pictures
+.bash_history			Public
+.bash_profile			course-git-blog-project
+.bash_sessions			css
+.bashr				index.html
+.conda				js
+.condarc			my-travel-plans
+.git				my_project
+.gitconfig			new-git-project
+.idlerc				readme.html
+.python_history			udacity-git-course
+afnanotb (main) ~
+$ rm -R .git
+override r--r--r--  afnanotb/staff for .git/objects/61/91e882a0be1bdbeb5ed08b0b36cb5c4b54cd88? y
+override r--r--r--  afnanotb/staff for .git/objects/0d/1045f0699c960a54aeddd8c657d532eb9ab69e? y
+override r--r--r--  afnanotb/staff for .git/objects/0d/e08477da3934e6c19f07ecfcf90f0dae8ecd86? y
+override r--r--r--  afnanotb/staff for .git/objects/0d/3a180611a87cd3ae3964fd04e5322c1478bb60? y
+override r--r--r--  afnanotb/staff for .git/objects/95/af6a066bfba7acedf951b6de0a9a3dd718ccc6? y
+override r--r--r--  afnanotb/staff for .git/objects/95/f50af04758a03dda5ea2ae04f22662941fb021? y
+override r--r--r--  afnanotb/staff for .git/objects/95/f5c4e5f215a72915ffa3ab3dbfdf0aa7592419? y
+override r--r--r--  afnanotb/staff for .git/objects/95/189ecade8875e06f49d11878b176e01ce38a33? y
+override r--r--r--  afnanotb/staff for .git/objects/59/c51087e853acc9792817f0fc4c0ec4c3f8dc9e? y
+override r--r--r--  afnanotb/staff for .git/objects/59/09135e7510719264fde14f6fd910f50fcbb533? y
+override r--r--r--  afnanotb/staff for .git/objects/59/e3aeda8a3570be16d7937e6c101467c78795b1? y
+override r--r--r--  afnanotb/staff for .git/objects/59/802f5c92d539f6758e28f6c7c212900edabd78? y
+override r--r--r--  afnanotb/staff for .git/objects/59/4b62c4f05368f91893f655a4a8ceb857cd0d81? y
+override r--r--r--  afnanotb/staff for .git/objects/92/687f86488a66f6ede788f60cd74a80225836ff? y
+override r--r--r--  afnanotb/staff for .git/objects/92/d4c2bd1406052885bcc84a376fd2221aabab72? y
+override r--r--r--  afnanotb/staff for .git/objects/92/d535b655a6f2c802b8a2a5f07584c3771e9b9d? y
+override r--r--r--  afnanotb/staff for .git/objects/92/dedeb7f70b37d163eacb07963a20ac5b6742d8? y
+override r--r--r--  afnanotb/staff for .git/objects/92/228ebd72c3221639bc1d879ea5e535e3323c99? y
+override r--r--r--  afnanotb/staff for .git/objects/92/7ecae8da67321c6a2ed21c007971c4dbed577d? y
+override r--r--r--  afnanotb/staff for .git/objects/0c/9a8d3e93440b1aa3e48d6000abd51255fb93b3? y
+override r--r--r--  afnanotb/staff for .git/objects/0c/ce29501051f48c17f2ffb6bfa3ed6e52a368c5? y
+override r--r--r--  afnanotb/staff for .git/objects/0c/a441d21fea23a3ab661a46c7cddd8e71c49fa7? y
+override r--r--r--  afnanotb/staff for .git/objects/0c/c67e73062de21092bedba4eff909cdeaa2d2b2? y
+override r--r--r--  afnanotb/staff for .git/objects/66/aa65d4aa099697c9b5acc5a8cbcd2a402785fb? y
+override r--r--r--  afnanotb/staff for .git/objects/66/cf085f26282bc154e46d4a6d2c7b37a2a8f198? y
+override r--r--r--  afnanotb/staff for .git/objects/66/10579436d052f92a2d247d48d194936f989268? y
+override r--r--r--  afnanotb/staff for .git/objects/3e/fc920b724c2b89dc7ecca2e2913156149b652b? y
+override r--r--r--  afnanotb/staff for .git/objects/50/f2ec30eabe1ba7c94d67b1ad778321f4ffc07c? y
+override r--r--r--  afnanotb/staff for .git/objects/50/2f0ca4673f2432e80bde01f8238b78e3ee9742? y
+override r--r--r--  afnanotb/staff for .git/objects/50/5cfba1879a78a7fec331616c53a1dee9e166b2? y
+override r--r--r--  afnanotb/staff for .git/objects/68/951f235515cf04c1b216141f83ada585a39200? y
+override r--r--r--  afnanotb/staff for .git/objects/68/309d111a6050739ccd938dd4d4b9fae3f4e36d? y
+override r--r--r--  afnanotb/staff for .git/objects/57/a0850a5606db9fd0822c8a06dc3a8db123f6d7? y
+override r--r--r--  afnanotb/staff for .git/objects/57/54405b189903d575fcb3b64b0a587d9cd5a48f? y
+override r--r--r--  afnanotb/staff for .git/objects/57/45ec71ab4a90331e2058c90a931639081bb2b3? y
+override r--r--r--  afnanotb/staff for .git/objects/57/3507fb33181bff140aaefc7adc909ef385ed34? y
+override r--r--r--  afnanotb/staff for .git/objects/57/ecbc56c3e1ad420f2c7d4d27411e2d34f0b11c? y
+override r--r--r--  afnanotb/staff for .git/objects/3b/fea26679d2654740cea654eebafef19226f446? y
+override r--r--r--  afnanotb/staff for .git/objects/6f/1c5524ff1c6241bea312fcc2a18a1b7e1121fc? y
+override r--r--r--  afnanotb/staff for .git/objects/6f/0d3aee4e8c5d35a965d50a5165aec46c7dd9f4? y
+override r--r--r--  afnanotb/staff for .git/objects/6f/ed1b19465fd1e3cc7dd81cedc1cab76dee7348? y
+override r--r--r--  afnanotb/staff for .git/objects/6f/16f867b143777e29744f7a11304c4b985ad07e? y
+override r--r--r--  afnanotb/staff for .git/objects/6f/4c8ff2582dba71eeeab951dbfe50970a6d066b? y
+override r--r--r--  afnanotb/staff for .git/objects/6f/fee868a15161cf2bec3d5465268d498d4ca43b? y
+override r--r--r--  afnanotb/staff for .git/objects/03/71e9d9ad5fe76aae171ed7944275368447d4d5? y
+override r--r--r--  afnanotb/staff for .git/objects/03/645271cf2c999a781ac6add6e6d6092f978853? y
+override r--r--r--  afnanotb/staff for .git/objects/03/970e6cad43c78a06995bb966b7088ed8cb2388? y
+override r--r--r--  afnanotb/staff for .git/objects/03/1c17cfe65a87b6b141853d93e26e37468623bf? y
+override r--r--r--  afnanotb/staff for .git/objects/9b/a622c3e87b43638b21c29b53361916573ec7fe? y
+override r--r--r--  afnanotb/staff for .git/objects/9b/70479e0b02dc2c390f0ce6df25b8e43b7880f0? y
+override r--r--r--  afnanotb/staff for .git/objects/9b/05de701ab7cc79f7daf076e7a278859ac8df65? y
+override r--r--r--  afnanotb/staff for .git/objects/9e/5a4ee09b59d399491c0e21f9a7d5cf6b772d55? y
+override r--r--r--  afnanotb/staff for .git/objects/9e/58b67fe46801384eba174b5ba8eb3ea3bb5c27? y
+override r--r--r--  afnanotb/staff for .git/objects/04/a700769f10b03a9b7f07f1ba9c908d0720fc59? y
+override r--r--r--  afnanotb/staff for .git/objects/04/67a76f7127dbc6abc2437995bab22071d29815? y
+override r--r--r--  afnanotb/staff for .git/objects/04/09fcedb50927238abc5363bf9f5e14de24f5ab? y
+override r--r--r--  afnanotb/staff for .git/objects/04/f680d43c8be6ed9daefcfe729d30ab9fe9a289? y
+override r--r--r--  afnanotb/staff for .git/objects/04/24804866107d24287a19f24320b8c9f7de0e90? y
+override r--r--r--  afnanotb/staff for .git/objects/6a/2b1a32b315f8580c25952c39ae30fe0bef174b? y
+override r--r--r--  afnanotb/staff for .git/objects/6a/23800b1e46671c97d6609930f76b2a245a0211? y
+override r--r--r--  afnanotb/staff for .git/objects/6a/c5fef0561b4cb9d6e36778ed016588b12518e1? y
+override r--r--r--  afnanotb/staff for .git/objects/6a/d96173d6fea348aae2d216d4a3acc98b9277c6? y
+override r--r--r--  afnanotb/staff for .git/objects/32/7c700c711019fc972132c132a1ee1914f6ac03? y
+override r--r--r--  afnanotb/staff for .git/objects/32/52a5bac7f7b7f69a03adb2442258e37db25107? y
+override r--r--r--  afnanotb/staff for .git/objects/32/78293511ca7b780e384ccff1ffd9248cc051fd? y
+override r--r--r--  afnanotb/staff for .git/objects/32/735b1e074e2cabf9a7113a2a3deba1addc01e2? y
+override r--r--r--  afnanotb/staff for .git/objects/35/db8724fdbaee665c683157c5d3e9fa4aac11d2? y
+override r--r--r--  afnanotb/staff for .git/objects/35/4865dac8db3deef6f5e7be2a341f8902557c43? y
+override r--r--r--  afnanotb/staff for .git/objects/35/9b62babd1442992fbf4552d27d4ab6b6b3485b? y
+override r--r--r--  afnanotb/staff for .git/objects/69/851ccd238a28204ec3a87ecc47023766620927? y
+override r--r--r--  afnanotb/staff for .git/objects/69/9b9ea5c2dd064fb584238cda788e47bcebff2f? y
+override r--r--r--  afnanotb/staff for .git/objects/69/1f67ae571255efcde8a7aaee62419c0f6b258e?
+override r--r--r--  afnanotb/staff for .git/objects/69/105c226e0f90e8ae6e65fde3a7e741487f1f4a? ^C
+afnanotb (main) ~
+$ chmod 777 .git
+afnanotb (main) ~
+$ rm -R .git
+override r--r--r--  afnanotb/staff for .git/objects/69/1f67ae571255efcde8a7aaee62419c0f6b258e? y
+override r--r--r--  afnanotb/staff for .git/objects/69/105c226e0f90e8ae6e65fde3a7e741487f1f4a? y
+override r--r--r--  afnanotb/staff for .git/objects/69/a1d38f2690d8fbd7de568bf9381e743ffe54ae? y
+override r--r--r--  afnanotb/staff for .git/objects/69/568075191af7b22fc4e9e556cdcd3c19dc7a51? y
+override r--r--r--  afnanotb/staff for .git/objects/69/328234f174e2a19c14a827a3ae0a1640bf1d81? y
+override r--r--r--  afnanotb/staff for .git/objects/3c/6bdb7219feed52cdb47a7e70bd4532f6fcca37? y
+override r--r--r--  afnanotb/staff for .git/objects/3c/20593632242645cf6fecb22ff898d0c4c11396? y
+override r--r--r--  afnanotb/staff for .git/objects/3c/9961d02d14de8f79bb0cad0df848d447044e5d? y
+override r--r--r--  afnanotb/staff for .git/objects/3c/396db243cc9897d7388d563dbe70edfa47901f? y
+override r--r--r--  afnanotb/staff for .git/objects/3c/8e5fcdb08334532a3cef2ac8abcd255501e2e6? y
+override r--r--r--  afnanotb/staff for .git/objects/56/b19b5d6a3d581322966feeb9188b8a90911074? y
+override r--r--r--  afnanotb/staff for .git/objects/56/e69ea66cf358889605f1124392262ae831a443? y
+override r--r--r--  afnanotb/staff for .git/objects/51/582e16a8215808c249ec38b5f802b042a392a3? y
+override r--r--r--  afnanotb/staff for .git/objects/51/03838560489d147ecd2771e5d1837419ec1b8a?
+rm: .git/objects/51: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/3d/5ed7838dfb1d7f6ef0448558ef0bf470813c43? y
+override r--r--r--  afnanotb/staff for .git/objects/3d/c09d9d57491fcb23b0dc326a0c2c48b0de1ce0? y
+override r--r--r--  afnanotb/staff for .git/objects/3d/6dc694e27de84fbcdc66031e6db9fdc72437b3? y
+override r--r--r--  afnanotb/staff for .git/objects/3d/feaa36de21395a9c07a157e553c6f940a72871? y
+override r--r--r--  afnanotb/staff for .git/objects/58/19a02ad7c68871ab31346eaed12f0fbdc2c1f9? y
+override r--r--r--  afnanotb/staff for .git/objects/58/5921f63343ce2ec557e595690f12ab6cee7ff4?
+override r--r--r--  afnanotb/staff for .git/objects/58/12ad930562d880d512d8aaac8dcb6e8643d8fb? y
+override r--r--r--  afnanotb/staff for .git/objects/58/d8f02b5efe94e6bacff8e5dc4975dae26f9194? y
+override r--r--r--  afnanotb/staff for .git/objects/58/02bf7e19a7c5d0258663fe028baf402e349bff? y
+override r--r--r--  afnanotb/staff for .git/objects/58/fa56906d2d7758ad4932bffd3a69ccd4fb96d4? y
+override r--r--r--  afnanotb/staff for .git/objects/58/50974f9ccff20a502e055ba6c935ea2d85514d? y
+rm: .git/objects/58: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/67/cec56d9f21a76404161be9a7da39add5560972?
+override r--r--r--  afnanotb/staff for .git/objects/67/866b9886edceadc87eab9dd6760305a9765f50? y
+override r--r--r--  afnanotb/staff for .git/objects/67/2c43461241e839a0814eb15f855cf1d02350bb? y
+override r--r--r--  afnanotb/staff for .git/objects/67/4c2e96dbe5a8adbe20c1a716af35d1cf829a51? y
+rm: .git/objects/67: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/0b/d35a47ebcd084e01316c1e1b33ef3fffefbc76? y
+override r--r--r--  afnanotb/staff for .git/objects/0b/68eafd3ee511e3838e6428e0d241c7723f8a65? y
+override r--r--r--  afnanotb/staff for .git/objects/0b/b455f9024bed158a06fb412aba757db1326b60? y
+override r--r--r--  afnanotb/staff for .git/objects/0b/f2cc026761fa02280ba7f909ff88aa62c2577b? y
+override r--r--r--  afnanotb/staff for .git/objects/93/1ffba9f08539151efa70a830ff0eaaed89234b? y
+override r--r--r--  afnanotb/staff for .git/objects/94/a81400cb7b4a649ba031f3df07beeb14bec8b8? y
+override r--r--r--  afnanotb/staff for .git/objects/94/559e50c11a9e022ce7b1bd5428aab0e3901eb5? y
+override r--r--r--  afnanotb/staff for .git/objects/94/30cc5f98ef1b584c236881792c9fe3a8157399? y
+override r--r--r--  afnanotb/staff for .git/objects/94/80b0b7fbacdfe8e725e62722a88c80f14588df? y
+override r--r--r--  afnanotb/staff for .git/objects/0e/ac0dea03a8d01c5886a419af3709d0c43f5301? y
+override r--r--r--  afnanotb/staff for .git/objects/0e/997160696c28b073ef4025795767f2ff8227b7? y
+override r--r--r--  afnanotb/staff for .git/objects/0e/c3e1b9e963e6e8d532165994efe3e84318c69d? y
+override r--r--r--  afnanotb/staff for .git/objects/0e/83dfa934cbb8e07184ffcc37421d55b5deba3a?
+override r--r--r--  afnanotb/staff for .git/objects/0e/766764f5e7bcb19dd758c7b4a84f070ba1262d? y
+override r--r--r--  afnanotb/staff for .git/objects/0e/ef7a318e80c66321280bdc2d273501c73bda6c? y
+override r--r--r--  afnanotb/staff for .git/objects/0e/ea947a395f9d2c2a4fe1669ae6d667686f5951? y
+override r--r--r--  afnanotb/staff for .git/objects/0e/6f98676e9bfa4be4f573cf68a8f2959083e0a2? y
+override r--r--r--  afnanotb/staff for .git/objects/0e/431afb21f7dab91783872582f310732171b610?
+rm: .git/objects/0e: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/60/5f75ce104a82514532014cf2a8a60c0123c7fb? y
+override r--r--r--  afnanotb/staff for .git/objects/60/70db8aa27370dbd71985322f51e7c575473aa8? y
+override r--r--r--  afnanotb/staff for .git/objects/60/a5c1f07c3da5b10ca266bcee74197993af950f? y
+override r--r--r--  afnanotb/staff for .git/objects/60/a12a39d4f166f2c17cc4b2fdc27d1939640b6e?
+override r--r--r--  afnanotb/staff for .git/objects/60/bbb0b8dcc10304c63fe4a0c37969ea2c2fec5d? y
+rm: .git/objects/60: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/34/05ef09046fefdd4acbdf274ab61c111b2152f7? y
+override r--r--r--  afnanotb/staff for .git/objects/5a/a26c6312df7e4e7334a5db1341a0ebf0ddcd38? y
+override r--r--r--  afnanotb/staff for .git/objects/5a/422489df6dd5ce7ab448bced5c4255a5c92815? y
+override r--r--r--  afnanotb/staff for .git/objects/5f/fe72d29a7bfd8e038cc349fe8b421f5a60ba29? y
+override r--r--r--  afnanotb/staff for .git/objects/5f/f3ba4b91e1f25a65f438e7c7d81636daf05721? y
+override r--r--r--  afnanotb/staff for .git/objects/5f/e6ac16f0ae0d7ea6b5e624f25098a62967c303?
+override r--r--r--  afnanotb/staff for .git/objects/5f/294bd87aa7596305092df3cc117ab913069799? y
+rm: .git/objects/5f: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/33/9431193d9c2346052b734f46d2130e0b7f91c8? y
+override r--r--r--  afnanotb/staff for .git/objects/05/cfd275dd35ce0af8cb26a64c5ac5f2b9d24a06?
+rm: .git/objects/05: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/9d/825b4dc29860c04825031e78107fe27b81e923? y
+override r--r--r--  afnanotb/staff for .git/objects/9d/549e1348ef39b52ed6d35fa24bb7686a5f9f63? y
+override r--r--r--  afnanotb/staff for .git/objects/9d/fe2f3d3965396567283c669b77f44ee875cc4c?
+rm: .git/objects/9d: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/9c/d9cb64cea4cf15b419bac06c7cec44acbb273d? y
+override r--r--r--  afnanotb/staff for .git/objects/9c/5329811c6ecb86a010cf5ce8a94f724b82ef69? y
+override r--r--r--  afnanotb/staff for .git/objects/9c/b065887cfe0c58ca266597e36311860ac3dc10?
+override r--r--r--  afnanotb/staff for .git/objects/9c/fe6d476ae434b77b012350fc2fb27bbde373f7? y
+override r--r--r--  afnanotb/staff for .git/objects/9c/291446947e6cc27ad28d88ca3d16bf43fd2b27?
+override r--r--r--  afnanotb/staff for .git/objects/9c/af20c9dfbdb967a99f477303cc85605ed63e49? y
+rm: .git/objects/9c: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/02/c5719ca3eddc7ad0608a79de31768c37f23b2a? y
+override r--r--r--  afnanotb/staff for .git/objects/02/6bd65690cf1c9d6d1e8bd979e01c780a588a7c? y
+override r--r--r--  afnanotb/staff for .git/objects/02/9518422f6a6b12ca372acd0575d2a2b749418a?
+override r--r--r--  afnanotb/staff for .git/objects/02/523235f8ecf79b123469a6a034de8a06aa3af7? y
+rm: .git/objects/02: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/a4/6328acf25300f8c67719e637d2318e18d580d0? y
+override r--r--r--  afnanotb/staff for .git/objects/a4/e7f38b6793332758a78d80fd7c8ba5688b0ed1? y
+override r--r--r--  afnanotb/staff for .git/objects/a3/575ca47288d2191f321b9926e166f7457e3a49?
+override r--r--r--  afnanotb/staff for .git/objects/a3/79d5387571adb9851020b6de59af373ee1106f? y
+override r--r--r--  afnanotb/staff for .git/objects/a3/95cc5d6ae6201c75c3838775163d6f0b7c8e4a? y
+override r--r--r--  afnanotb/staff for .git/objects/a3/228dd80cdf01a053472dde9707a88825b85bab? y
+override r--r--r--  afnanotb/staff for .git/objects/a3/b96a8599ee3819502b3e2bad45b7cd5c05f381? y
+override r--r--r--  afnanotb/staff for .git/objects/a3/bda23db2cac93fca9b4efca00bfedf1f36321d? y
+rm: .git/objects/a3: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/b5/d627fe7ae01f9867be6a64425078f19844b36d?
+override r--r--r--  afnanotb/staff for .git/objects/b5/448fcf7735a9e72f394f2f7508bf187e88ec27? y
+override r--r--r--  afnanotb/staff for .git/objects/b5/77c0f4bf9dc228fc9084296abb0214430a82da? y
+override r--r--r--  afnanotb/staff for .git/objects/b5/4f3111ed0c1a358d0ae9643fb77d41b8bba6d4?
+override r--r--r--  afnanotb/staff for .git/objects/b5/2ac51c0e28a499ac91238588251738c4c6ec20? y
+rm: .git/objects/b5: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/b2/c49f12d15cbd801bca4c883f0c2beda9243fb2? y
+override r--r--r--  afnanotb/staff for .git/objects/b2/1346abe2171ac4296bb178a77bef2fe3d8e8bf? y
+override r--r--r--  afnanotb/staff for .git/objects/b2/88dd7264a516f72006c656df1e3f9870aee97a? y
+override r--r--r--  afnanotb/staff for .git/objects/b2/16309cec88060ad2012e3705ebf824b3bd17fe? y
+override r--r--r--  afnanotb/staff for .git/objects/b2/tmp_obj_9AJGcb? y
+override r--r--r--  afnanotb/staff for .git/objects/b2/816a5c02efa4c6cc49007bc603657b9cc14c35? y
+override r--r--r--  afnanotb/staff for .git/objects/d9/e501ed9c3398a6ac980f3fea0162f80b20cc34? y
+override r--r--r--  afnanotb/staff for .git/objects/d9/94b2ea53ab560e52c7b781bccb8a3aa155db57?
+override r--r--r--  afnanotb/staff for .git/objects/d9/facbac1f83e5755e99782df08b5f268e488c74? y
+override r--r--r--  afnanotb/staff for .git/objects/d9/cbb73529c36d4a7f113607baac80b73b657593? y
+override r--r--r--  afnanotb/staff for .git/objects/d9/b9db080de6304c491619d720d3f4589bf7f85b? y
+override r--r--r--  afnanotb/staff for .git/objects/d9/e3079ee9c3d807d0c24cc8018672c1ed446d10? y
+override r--r--r--  afnanotb/staff for .git/objects/d9/261162d6ed3ff86748d7ed379c3beeb3cae2f9? y
+rm: .git/objects/d9: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/ac/0bd4fdda28a66f824c2ae4ec55a393aaa9f89d? y
+override r--r--r--  afnanotb/staff for .git/objects/ac/3b4bff08a4a87c54f804e44f42a8e203ed2007?
+override r--r--r--  afnanotb/staff for .git/objects/ac/66d4f2b178042c1d10c1ada2df053ca234d2ca? y
+override r--r--r--  afnanotb/staff for .git/objects/ac/tmp_obj_4lmeAa? y
+override r--r--r--  afnanotb/staff for .git/objects/ac/e96d8ae786ce90bf613e5c9f378c8186d2483e? y
+rm: .git/objects/ac: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/ad/42d9260d8a5d88899877564ab445de86cf56ff? y
+override r--r--r--  afnanotb/staff for .git/objects/ad/90dd7fa8702296a5b7c82e39d36338ae9e23ea? y
+override r--r--r--  afnanotb/staff for .git/objects/ad/1cdc6ecbd4f9d774085baa071b6962730244e7? y
+override r--r--r--  afnanotb/staff for .git/objects/bb/331aca5ee58eb09a12bfe5d15ff6c64585830d? y
+override r--r--r--  afnanotb/staff for .git/objects/bb/f5512be27378da7f5324b61dfe126bee616c19? y
+override r--r--r--  afnanotb/staff for .git/objects/d7/ab5c5f765ac61a6eeaab7d491a2fa9902318a5? y
+override r--r--r--  afnanotb/staff for .git/objects/d0/c69440c8fe7eb42ddcb8a03eef868e98a4e881? y
+override r--r--r--  afnanotb/staff for .git/objects/d0/3ba2ad0239121792cc025acdbc3f5f1e75c617? y
+override r--r--r--  afnanotb/staff for .git/objects/be/43dd5c48266f4897f01382c34331e814fcabd0? y
+override r--r--r--  afnanotb/staff for .git/objects/be/cc4cd8157fcf4027925187b5074dade305cd7d? y
+override r--r--r--  afnanotb/staff for .git/objects/be/b792e555e2afd9494106171d0746851b94a918? y
+override r--r--r--  afnanotb/staff for .git/objects/be/62b9a3d45467f48c4c019c37cb6a3e31eab4d8? y
+override r--r--r--  afnanotb/staff for .git/objects/be/56cd24336c042f2d411d64deda4680052c3868? y
+override r--r--r--  afnanotb/staff for .git/objects/b3/207adc396b3345f6f616d69f9cb25528494416? y
+override r--r--r--  afnanotb/staff for .git/objects/b3/8c4b27951a8e9e470e9ae0acae80facc46d980? y
+override r--r--r--  afnanotb/staff for .git/objects/b3/c84dba6eae7d00a77ccdf5837e8aab9c3135ba? y
+override r--r--r--  afnanotb/staff for .git/objects/b3/37195189f7ac58972d7df9cd24c3ee92752744? y
+override r--r--r--  afnanotb/staff for .git/objects/b3/b95159cc657df7d7bac42fb00b72d4598425ee? y
+override r--r--r--  afnanotb/staff for .git/objects/b3/57d369555597e172e6519235b8d065ce62db8d? y
+override r--r--r--  afnanotb/staff for .git/objects/df/2bfd84a8e316f8e0ef00719f27b383cc74bb7f? y
+override r--r--r--  afnanotb/staff for .git/objects/df/b7230637e68214ea50b23b12821e212b24dd40? y
+override r--r--r--  afnanotb/staff for .git/objects/df/ff6cb67d5a49a43d7bcf667381b56b368ae6bf? y
+override r--r--r--  afnanotb/staff for .git/objects/da/1151f573b4cdda13089c9697706fa452429e7f? y
+override r--r--r--  afnanotb/staff for .git/objects/da/78a84d511d3a137736d6f0438c3c1892515b38? y
+override r--r--r--  afnanotb/staff for .git/objects/da/b0ae305e7c4fad593c29d44b2c082371914997? y
+override r--r--r--  afnanotb/staff for .git/objects/b4/9ad99b7a0b4d55b0f1b4a70582e60502992b11? y
+override r--r--r--  afnanotb/staff for .git/objects/b4/7fdd14b2a87fea507a993cbcdf5f75d9a79f39?
+override r--r--r--  afnanotb/staff for .git/objects/b4/ad5d08fdb4386f5770e94b2939afe71d3d451b? y
+override r--r--r--  afnanotb/staff for .git/objects/b4/ab3c542854f330f13fca8a036dd12372739496? y
+override r--r--r--  afnanotb/staff for .git/objects/b4/acc1ef383566aa75161688ba8e6fc3aea47c59? y
+override r--r--r--  afnanotb/staff for .git/objects/b4/485f79ea245c0dddfa690b558475a8ef1329c1? y
+override r--r--r--  afnanotb/staff for .git/objects/b4/a0f49e6567b268df68a48ce214d3ba5e7578af? y
+rm: .git/objects/b4: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/a2/557042438d13c9c380cd857f62de2426c02eec? y
+override r--r--r--  afnanotb/staff for .git/objects/a2/f5e890c9f69fb21e90d0b1f2c615b6e4e03bb5? y
+override r--r--r--  afnanotb/staff for .git/objects/a2/45ac1979b449f59357b7606c1ae6b921cf8b3f? y
+override r--r--r--  afnanotb/staff for .git/objects/a2/838ebb6600057595ee868e202b1bd79d092a70? y
+override r--r--r--  afnanotb/staff for .git/objects/a5/a7aec2550283f235bc9dba799ec5fe4921ef1e? y
+override r--r--r--  afnanotb/staff for .git/objects/a5/a1e8db9abe7f985d5fc954a700bf93dbabd460? y
+override r--r--r--  afnanotb/staff for .git/objects/a5/7f504506068228549bc0a1d62ebc8b6444d789? y
+override r--r--r--  afnanotb/staff for .git/objects/a5/ae8d147583720f4bb07c88037eca6fe6526fea? y
+override r--r--r--  afnanotb/staff for .git/objects/bd/9052afa6ce4aa18bb6c08bb33babeaa977b461? y
+override r--r--r--  afnanotb/staff for .git/objects/bd/785bf90a2e956dcef8b66b4ec97ea261aa44e9? y
+override r--r--r--  afnanotb/staff for .git/objects/bd/2f86189284fc8904cb8ce06a56c99cac75c193? y
+override r--r--r--  afnanotb/staff for .git/objects/bd/04210fb49f6032c3cd79559334dbe735a998ef? y
+override r--r--r--  afnanotb/staff for .git/objects/bd/3bd432ea1d6144f2e9acba68dd5b6eec79006b? y
+override r--r--r--  afnanotb/staff for .git/objects/bd/e538121eefe1a250907b7e3108acb4e8c8793f? y
+override r--r--r--  afnanotb/staff for .git/objects/bd/0d574cf43d367fb43a00072b17f0d1fcad3088? y
+override r--r--r--  afnanotb/staff for .git/objects/d1/cef6907f43ef284b228c3b3dffab2dabb1cdc0? y
+override r--r--r--  afnanotb/staff for .git/objects/d1/010802863c5533fdca2bd9425b0a3291195d92? y
+override r--r--r--  afnanotb/staff for .git/objects/d1/7347802e554f1392f62643c94ff6c90180da29? y
+override r--r--r--  afnanotb/staff for .git/objects/d1/3427d087117b361b6af8bac97ff3aacb3ca6fa? y
+override r--r--r--  afnanotb/staff for .git/objects/d6/095936782edaa53bda50de75a1ccfe7335f060? y
+override r--r--r--  afnanotb/staff for .git/objects/d6/4a1b27bf04a43d3277dc9c0d7c8ebb2f753e0f? y
+override r--r--r--  afnanotb/staff for .git/objects/d6/5991f7841026ad018c34f98f7b10aa01d4f5fa? y
+override r--r--r--  afnanotb/staff for .git/objects/bc/e489712e9db7859aafb044cc9c72995925587f? y
+override r--r--r--  afnanotb/staff for .git/objects/bc/836af909efd91d1e59f3c4888f81712a911a05? y
+override r--r--r--  afnanotb/staff for .git/objects/bc/9e1d2ec91f7a2f48175be79ae9d5ef4cf659d4? y
+override r--r--r--  afnanotb/staff for .git/objects/bc/15033dd31d21786e85b117dfa2054854e983a3? y
+override r--r--r--  afnanotb/staff for .git/objects/bc/baf0690f5ef55f62c51ba174388dcdb25e87ae? y
+override r--r--r--  afnanotb/staff for .git/objects/bc/018e523d00d68405963de7126eb701eb9d645b? y
+override r--r--r--  afnanotb/staff for .git/objects/bc/768155d047faac0283c9a5950a2bb026ec43ed? y
+override r--r--r--  afnanotb/staff for .git/objects/ae/946f9906d926a50229400dbf7b2dc39646af4f?
+override r--r--r--  afnanotb/staff for .git/objects/ae/2623ecaf5f91799b6a9ad6b525f9ac635396e5? y
+override r--r--r--  afnanotb/staff for .git/objects/ae/3a0d04f8ada5ffb8a01d0cac7b3c2d98701ce7? y
+override r--r--r--  afnanotb/staff for .git/objects/ae/72dc63dcfcfc1d341555b283a6fc6f87c646ac?
+override r--r--r--  afnanotb/staff for .git/objects/ae/f485e233010699c247fb3fd5d4c2bb274ce94e? yy
+override r--r--r--  afnanotb/staff for .git/objects/ae/ec7855f055eb4ee6e22d19ed27e7e5d7d37600?
+override r--r--r--  afnanotb/staff for .git/objects/ae/18eed20cebc8406676c49925e149fd2e64e231? y
+rm: .git/objects/ae: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/d8/5f61d338838228827be35bcb9784630b8bf34a? y
+override r--r--r--  afnanotb/staff for .git/objects/d8/1cb6aa557eb4ad2bfab29fc728c911f57012c1? y
+override r--r--r--  afnanotb/staff for .git/objects/d8/c933fc5ff55208d2e1c9adca2f525770f580e2? y
+override r--r--r--  afnanotb/staff for .git/objects/d8/2393bdcfec183437f3ffde7de58e8047a2b5d0? y
+override r--r--r--  afnanotb/staff for .git/objects/ab/9396354e1d9f06b6a55bb47f8e09c4614ee057? y
+override r--r--r--  afnanotb/staff for .git/objects/ab/eec97e842bd1fa23aa084ef933bd221fd5f19d? y
+override r--r--r--  afnanotb/staff for .git/objects/ab/5e0b7d2ad173737584a4a63ba3b0a8bb60fbfc? y
+override r--r--r--  afnanotb/staff for .git/objects/ab/d0bb3cc53d526f6473c9662ae69bbe79151263?
+override r--r--r--  afnanotb/staff for .git/objects/ab/ec8746bd4b9243386c3d32e2aa85fe25b6ea8c? y
+override r--r--r--  afnanotb/staff for .git/objects/ab/f10203ea97c8d58c5caa59b32e89b8a9813a10? y
+rm: .git/objects/ab: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/e5/da5b9fb97b5b584d7ee380b568ea6d162bdb1e? y
+override r--r--r--  afnanotb/staff for .git/objects/e5/421579f6421e454f3bbf944e0d39efe6600c85? y
+override r--r--r--  afnanotb/staff for .git/objects/e2/b4a6d2c05e3b50ad43b380d522f302c4db3e7b? y
+override r--r--r--  afnanotb/staff for .git/objects/f4/92d160236fccac4312a7b1696d720ac7f80db7? yy
+override r--r--r--  afnanotb/staff for .git/objects/f4/543072b2763185eefdf4a9b4b71db64d8b11ba? y
+override r--r--r--  afnanotb/staff for .git/objects/f4/f07a8094c96d45c23ce29282c12f28dfbb5fcb? y
+override r--r--r--  afnanotb/staff for .git/objects/f4/ef0a3e21c9000c81f2a9f8f1762298d0ba8d11? y
+override r--r--r--  afnanotb/staff for .git/objects/f3/50beda1b69077f0f1a05da153ff9f10b76b25a? y
+override r--r--r--  afnanotb/staff for .git/objects/f3/a684d4d45a8882049a9c72c328a2e9cd17d946? y
+override r--r--r--  afnanotb/staff for .git/objects/f3/201a88de391014ba1b69b32915b498ff7e899f? y
+override r--r--r--  afnanotb/staff for .git/objects/f3/f70f48839491d9c0ed022b4d63d008b2b06b36? y
+override r--r--r--  afnanotb/staff for .git/objects/f3/6342a3d21472b06a76a02de2ec40ae317cb9af? y
+override r--r--r--  afnanotb/staff for .git/objects/f3/ab024ff36a6d2cec60d77a0a8a43e350b41253? y
+override r--r--r--  afnanotb/staff for .git/objects/f3/1b8b604e5681e9c547b467824bf6f64d012f22? y
+override r--r--r--  afnanotb/staff for .git/objects/f3/ac4f1d3fd4bf7dc8e07a54eeb2a499a6c41687? y
+override r--r--r--  afnanotb/staff for .git/objects/eb/7110d9127e3f18820efc9fc3c53dbda107fe0c? y
+override r--r--r--  afnanotb/staff for .git/objects/c0/956ab5fc65e877c9f7b266ff34cb25fc5b0ed9? y
+override r--r--r--  afnanotb/staff for .git/objects/c0/7063f5b0af4b864d19bfe79280780dc71636b5? y
+override r--r--r--  afnanotb/staff for .git/objects/c0/53c64bf9f0aceee7abb7fb4cc131407fc640ce? y
+override r--r--r--  afnanotb/staff for .git/objects/c0/9618998b8ddedebd59343bc9aad098d00372c3? y
+override r--r--r--  afnanotb/staff for .git/objects/ee/e6ffc242e16c189f60110437b9aed069d2b527? y
+override r--r--r--  afnanotb/staff for .git/objects/ee/1f0104c59fcd66967fc8439919461f2fcd11eb? y
+override r--r--r--  afnanotb/staff for .git/objects/c9/72b2679fc462dc9362496ce3975afa93ec3428? y
+override r--r--r--  afnanotb/staff for .git/objects/c9/bb206c17e6c7be957e2df1cbd8cb7f36a84b42? y
+override r--r--r--  afnanotb/staff for .git/objects/fc/edb8b4dc31444758bde644d4a60aecbfb57b02? y
+override r--r--r--  afnanotb/staff for .git/objects/fc/6a33f58c9df250cccdab9818eb9ab4b9540979? y
+override r--r--r--  afnanotb/staff for .git/objects/fc/0ba8b3de748a10cf7347045558944261f505fc? y
+override r--r--r--  afnanotb/staff for .git/objects/fc/2ee7b32d10a2e74974cee9097e055f6c12b93c? y
+override r--r--r--  afnanotb/staff for .git/objects/fd/88d05a4dbb3f79809be0ecd23ef83e0b0a8e7a? y
+override r--r--r--  afnanotb/staff for .git/objects/fd/6076af976fffb4a9e003472049e1623aa75a00? yy
+override r--r--r--  afnanotb/staff for .git/objects/fd/181c2b4aafd407a3b8f5b4526b374c80fef2b7?
+override r--r--r--  afnanotb/staff for .git/objects/fd/b87d46cd4dcae30685c1111d2fca296b3d0d3f? y
+override r--r--r--  afnanotb/staff for .git/objects/fd/22fa95493fc47a4e9f9d90d2a2820e05640aec?
+rm: .git/objects/fd: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/f2/7327c7715e86edbf68b1629260251768e51423? y
+override r--r--r--  afnanotb/staff for .git/objects/f2/b24efd92b0fa5e8dccb6f566d9993bf6ad4067? y
+override r--r--r--  afnanotb/staff for .git/objects/f2/04393d442bb94cf57c500e16476b3b1e14872d? y
+override r--r--r--  afnanotb/staff for .git/objects/f5/404f993082932df4b4baf03d3c2780d594aa42? y
+override r--r--r--  afnanotb/staff for .git/objects/f5/e7cb110c79020d6a222b0319ebca4a1c269b2f? y
+override r--r--r--  afnanotb/staff for .git/objects/e3/5a483a843dcbe98132f3a4c321a3b81b9d1c6d? y
+override r--r--r--  afnanotb/staff for .git/objects/e3/f67ead797d51db03025adee26dee76472029b0? y
+override r--r--r--  afnanotb/staff for .git/objects/e3/1a4a777cde70c4a40e2c4e8d13c2267417e697? y
+override r--r--r--  afnanotb/staff for .git/objects/e3/2c6a73064bf319b3bb63760446356550ebbb06? y
+override r--r--r--  afnanotb/staff for .git/objects/e3/b97f316bf7425c0e0fb2072fe2485e69f00609? y
+override r--r--r--  afnanotb/staff for .git/objects/cf/85d34adacd8fb4af64987a0c4d213ba3bb2ae4? y
+override r--r--r--  afnanotb/staff for .git/objects/cf/8f076eaab516ecb2bb631306e86522d4a00a11? y
+override r--r--r--  afnanotb/staff for .git/objects/cf/c8b3b9ce5b8ba3dc9c467d0d08ae2effc489ea? y
+override r--r--r--  afnanotb/staff for .git/objects/ca/899a0ba8d6b27f68143a2c854dedc220873f52? y
+override r--r--r--  afnanotb/staff for .git/objects/e4/21571595e868ed4e1e1e2ff0085073aae9eb9c?
+override r--r--r--  afnanotb/staff for .git/objects/e4/fad4f3119c0825cf7da8ccad2c969080f26b10? y
+override r--r--r--  afnanotb/staff for .git/objects/e4/42aa71de448a726d141595d50c8f059ff237af? y
+override r--r--r--  afnanotb/staff for .git/objects/e4/06ba6bc9b63eb43eaca775d62297deaa553b43? y
+rm: .git/objects/e4: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/fe/783efff97b4036876820e4a4e7a75c4c7faa79? y
+override r--r--r--  afnanotb/staff for .git/objects/fe/1bc5bd602855016d7606aea74c40686b1ab0ac? y
+override r--r--r--  afnanotb/staff for .git/objects/c8/f9e371189f48c9bf8a8cf33b14247c9edcf5fb? y
+override r--r--r--  afnanotb/staff for .git/objects/c8/962f17c11e3fcf1b79fd5eaca447993de2ae64? y
+override r--r--r--  afnanotb/staff for .git/objects/fb/0f96a4ce4577cb6605cfebd3e7b704b9721384? y
+override r--r--r--  afnanotb/staff for .git/objects/fb/accd7ecd66c0cb856b8f1184c0ef0ba06d9114? y
+override r--r--r--  afnanotb/staff for .git/objects/fb/7c8e8ed3a3132cd80943d9d3564a8de99cbeac? y
+override r--r--r--  afnanotb/staff for .git/objects/fb/7602976b9b02ef8fb78c26b9999f135e392d1d? y
+override r--r--r--  afnanotb/staff for .git/objects/fb/6c50b9f7b32821a5331c60d6fa46e786f5dc87? y
+override r--r--r--  afnanotb/staff for .git/objects/fb/15b645dd796f587cd3ce34a2c2ea8a00531b60? y
+override r--r--r--  afnanotb/staff for .git/objects/ed/acc846ef3f77c58d604199d7921075894db299? y
+override r--r--r--  afnanotb/staff for .git/objects/ed/0bc5503da08874676f272fc0d029d11b61c97b? y
+override r--r--r--  afnanotb/staff for .git/objects/ed/0f08f14389dd75fc98c0301057cc8b6eaf70b9? y
+override r--r--r--  afnanotb/staff for .git/objects/ed/92eaad52e5744b4c99ae9a2f1075cb4a3d9970? y
+override r--r--r--  afnanotb/staff for .git/objects/ed/538776b6b5a4b10775f38a25dc322015ab8474?
+rm: .git/objects/ed: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/c1/5430c39934e659b911424d77b8fb0c067beb2e? y
+override r--r--r--  afnanotb/staff for .git/objects/c1/0002fbe856bdf1574b3a25a90c1c516f34619f? y
+override r--r--r--  afnanotb/staff for .git/objects/c1/cad6a29eaa33a0f6bc8dd18d2d3d851356f5cd? y
+override r--r--r--  afnanotb/staff for .git/objects/c6/a0c698fea68893ca457f464123a9fed9872155? y
+override r--r--r--  afnanotb/staff for .git/objects/c6/73c56e0bd919c689e600feb8319c032883174c? y
+override r--r--r--  afnanotb/staff for .git/objects/ec/8f618c3cdde2ccda4acd7d0016257e20bcd939? y
+override r--r--r--  afnanotb/staff for .git/objects/ec/db8931eabb72a77939f7e65cfecb097b843591? y
+override r--r--r--  afnanotb/staff for .git/objects/ec/3037cb39ab0f6d49c6cb34f0432e20c615a04e? y
+override r--r--r--  afnanotb/staff for .git/objects/ec/241f16c945fed18e66417302299b0c3eccdd97? y
+override r--r--r--  afnanotb/staff for .git/objects/ec/d3b14bd0c6abd4c111e98095438d681ccd44c0? y
+override r--r--r--  afnanotb/staff for .git/objects/ec/5d91812bae9dc282d37cdb27e8f94be906f439? y
+override r--r--r--  afnanotb/staff for .git/objects/4e/d0d88cb3393a7b63ede7dba2aa67f9d3486c8b? y
+override r--r--r--  afnanotb/staff for .git/objects/4e/f04c3af0e18d6988d63225a7f8a62e0b17f810? y
+override r--r--r--  afnanotb/staff for .git/objects/4e/8cc9ec65552974c811ea1b2b868ad61d1b708a? y
+override r--r--r--  afnanotb/staff for .git/objects/20/8f067c9c747e7d5d7f89ef0096bc69610507f0? y
+override r--r--r--  afnanotb/staff for .git/objects/20/5952076a9707e8c493ebe097374adeb14fba3e? y
+override r--r--r--  afnanotb/staff for .git/objects/20/57c430afa05b48982ca83e6411da23039bbc48? y
+override r--r--r--  afnanotb/staff for .git/objects/20/62ba8c53ef7a439883771efe29effaf9b6ec5f? y
+override r--r--r--  afnanotb/staff for .git/objects/20/563531adb42b6ce0db727eb24ab71a3ef18845? y
+override r--r--r--  afnanotb/staff for .git/objects/18/5946de967c48147b06ea549c1aaf1a645beed5? y
+override r--r--r--  afnanotb/staff for .git/objects/18/e34bdf315565601bac1a5ea70ea6029f56500e? y
+override r--r--r--  afnanotb/staff for .git/objects/18/2be40d3f584c5f6c625cc7ebe7cb0368f415fa? y
+override r--r--r--  afnanotb/staff for .git/objects/18/b58feb758fb8a9ac7cb7904e2680e72aabf60d? y
+override r--r--r--  afnanotb/staff for .git/objects/18/3b3194668cda66e6d5b731a97c4c0a6b55fb27? y
+override r--r--r--  afnanotb/staff for .git/objects/27/9fa0c80acdcf10308b3fed1020dd7513708954? y
+override r--r--r--  afnanotb/staff for .git/objects/27/513b95d1496410da616cfcc17f500d7aa1dc64? y
+override r--r--r--  afnanotb/staff for .git/objects/4b/d7de4e9074f037299823d81eddd6a73be31da2? y
+override r--r--r--  afnanotb/staff for .git/objects/4b/5fbc967a206597af73a5d39d6f850b28963e83? y
+override r--r--r--  afnanotb/staff for .git/objects/4b/fbba4e59c410799e28532d4b41f380265dace4? y
+override r--r--r--  afnanotb/staff for .git/objects/4b/e71d70ac4781e0065a8e083a8f4b3fd405207b? y
+override r--r--r--  afnanotb/staff for .git/objects/4b/f8e54b99197ac3a1534d4f6622cbdf3ca47fca? y
+override r--r--r--  afnanotb/staff for .git/objects/4b/93b0245a8b8c87e796b15abadf837c9761372e? y
+override r--r--r--  afnanotb/staff for .git/objects/11/39d0361c05e30e6939c84034c8d36134a5f60a? y
+override r--r--r--  afnanotb/staff for .git/objects/11/9e8c13c7189a4c9b66d6e70455c0fc0a399728? y
+override r--r--r--  afnanotb/staff for .git/objects/11/20169fe987b303cf15d2545587d031fb8bc165? y
+override r--r--r--  afnanotb/staff for .git/objects/11/342ee080e93d79940356b298e1b012ff3775c6? y
+override r--r--r--  afnanotb/staff for .git/objects/11/3e507acd5a44a1e212065235dd4cd9026988d2? y
+override r--r--r--  afnanotb/staff for .git/objects/11/447dccc92ee30ed1c162785c3bb4f35b23c59d? y
+override r--r--r--  afnanotb/staff for .git/objects/7d/dfce9f0216b6e756f0004bbb38086bad633cef? y
+override r--r--r--  afnanotb/staff for .git/objects/7d/df4ad4fc412917866743233e9f2cb0e6a6c2e9? y
+override r--r--r--  afnanotb/staff for .git/objects/7d/3a8e5cdec424c594f645fad7c7b9be883b3310?
+override r--r--r--  afnanotb/staff for .git/objects/7d/d5401c79d0f88d8777a416585d1865d1b72f94? y
+rm: .git/objects/7d: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/29/79312d253027e1db49d4fc296c0b48606c10dc? y
+override r--r--r--  afnanotb/staff for .git/objects/29/9bf93487143a56d1cf46ae0e819737b3a378cd?
+override r--r--r--  afnanotb/staff for .git/objects/29/21d900e5823c2efe397e2d7fbba74e2804422e? y
+rm: .git/objects/29: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/7c/1e77710e6f19888fa4b6ff27baa2421275b6c8?
+override r--r--r--  afnanotb/staff for .git/objects/7c/39b8f94aecaa9ccba031447b2418cd7fac85bf? y
+override r--r--r--  afnanotb/staff for .git/objects/7c/a9221df73b24911f1ae1460835bc677bfce62c? y
+rm: .git/objects/7c: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/16/bfd934af8ac3683bbf0abb8b51fbb7856d27c8? y
+override r--r--r--  afnanotb/staff for .git/objects/16/77768df4daa73f8085a5a08d5265b00a37f237? y
+override r--r--r--  afnanotb/staff for .git/objects/16/b86d1b5bea01d2e4e047b44d490366438b1caf? y
+override r--r--r--  afnanotb/staff for .git/objects/16/5dc7e586f0732925a707a58c58c2cf20da42bc? y
+override r--r--r--  afnanotb/staff for .git/objects/16/db013616e92c9b6d1339a39a6390ad5610d55b? y
+override r--r--r--  afnanotb/staff for .git/objects/16/7aac09ef6f2d7b78e74e34f31d14d5f7718bcb? y
+override r--r--r--  afnanotb/staff for .git/objects/42/c7d10a2123a8365616159e14bd5ca8526e418d? y
+override r--r--r--  afnanotb/staff for .git/objects/42/0656c3ff48f56715f34d55784bc8e086368890? y
+override r--r--r--  afnanotb/staff for .git/objects/42/755b5c93de708182057353a02ed8ddbfd7533e?
+override r--r--r--  afnanotb/staff for .git/objects/42/fd552600fe2e7fc48d79962b7c03903116ae04? y
+override r--r--r--  afnanotb/staff for .git/objects/42/4d291d334d06c8531ea95074a0e8558d8d44f9? y
+override r--r--r--  afnanotb/staff for .git/objects/42/d62d330aa5abb2caf6fd4f4ed23c1201cd61d4? y
+rm: .git/objects/42: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/89/43993a1266d384fb2b12861b0add2b9ab0e928? y
+override r--r--r--  afnanotb/staff for .git/objects/89/1d1dd5baeab0e76c210e73e6d6b897784fe0ec?
+override r--r--r--  afnanotb/staff for .git/objects/89/5338d42ada67a2aa6596b829ff95c828aa3c1b? y
+override r--r--r--  afnanotb/staff for .git/objects/89/b6e74809077706a5b8793ba9d2ab50182bec98? y
+override r--r--r--  afnanotb/staff for .git/objects/89/d7a15fc2a08ab3b54897918038acb46e4dbe2d? y
+rm: .git/objects/89: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/45/191a597e8ca84fbdb90542c15da47587164329? yy
+override r--r--r--  afnanotb/staff for .git/objects/45/dfc5b3d2ec6108cf4010bc60ed4f48c6e63dfc? y
+override r--r--r--  afnanotb/staff for .git/objects/45/96ad0309ebd7d930006acb1cb54c75e819214e? y
+override r--r--r--  afnanotb/staff for .git/objects/1f/8cf4bac4798decdb136b8fdfb25cb2789da355? y
+override r--r--r--  afnanotb/staff for .git/objects/1f/c45acb0254ea64c4674f96157de1939d4f4b8d? y
+override r--r--r--  afnanotb/staff for .git/objects/73/225907fbec8c34f619f2443161ffe995707bb3? y
+override r--r--r--  afnanotb/staff for .git/objects/73/2bb4da22671e3fdbe7d0d271e1b269747856c9? y
+override r--r--r--  afnanotb/staff for .git/objects/73/1239b38523dcbaa127990031caa0a7e85062ce? y
+override r--r--r--  afnanotb/staff for .git/objects/73/efbabda121d788c086e938e8c434afa20d12d0? y
+override r--r--r--  afnanotb/staff for .git/objects/73/5a46570b2176a59af71f49445f9d845fd11df6? y
+override r--r--r--  afnanotb/staff for .git/objects/73/9ca2b2ebcaec7ff306aba28264849eb2eff093? y
+override r--r--r--  afnanotb/staff for .git/objects/87/233037ed2e470ad4b63c910a1ba79ea23b3241? y
+override r--r--r--  afnanotb/staff for .git/objects/87/b7e3991ae938e0ed065ba6c716d673c03c1da6?
+rm: .git/objects/87: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/80/eac10c65d9f3a98951e8670f5403ee125aa04f? y
+override r--r--r--  afnanotb/staff for .git/objects/80/73c35e82c2304b48c002058226157c7addef33? y
+override r--r--r--  afnanotb/staff for .git/objects/80/a0fe7c93551c1754480d84fb36b1d2455914ee? y
+override r--r--r--  afnanotb/staff for .git/objects/74/813b59fdd20b66ea7dad424a3cab4656c34685? y
+override r--r--r--  afnanotb/staff for .git/objects/1a/e3a7a9aac09cf2858e7e057035d914852f8ff1?
+override r--r--r--  afnanotb/staff for .git/objects/1a/a91d16b09b6eb493fb103b9dd532fb71b4213a? y
+override r--r--r--  afnanotb/staff for .git/objects/1a/0f6c48382ceb19e4ec601887946cf39d4306f5? y
+override r--r--r--  afnanotb/staff for .git/objects/1a/30d70f7509be59e387418417da5462a3c3b028? y
+override r--r--r--  afnanotb/staff for .git/objects/1a/5ff48b2426c15ffe56a858a87f6763b71b3a05? y
+override r--r--r--  afnanotb/staff for .git/objects/1a/177ad33a574e9cfa40062a11624232f8c2dcd7?
+rm: .git/objects/1a: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/28/b1ce8fb603fc8af5746d4c39eafe03df35a4ac? y
+override r--r--r--  afnanotb/staff for .git/objects/28/e00d24baa2263b0ed3c5b105d3e52902b36607? y
+override r--r--r--  afnanotb/staff for .git/objects/28/1b373e5a022c3319515fd52304087892fa54bf? y
+override r--r--r--  afnanotb/staff for .git/objects/17/a754d91f5c39d9d6356befc9c3999dd57fdbdb? y
+override r--r--r--  afnanotb/staff for .git/objects/17/cd308a1efcce463497f77e9c0cd594d1c0d936? y
+override r--r--r--  afnanotb/staff for .git/objects/17/a488b7eff3e4a5a6354cf9911aafe503ba0578? y
+override r--r--r--  afnanotb/staff for .git/objects/17/a8c3d48708e9b167ffaf17f2e54ffd33eb8813? yy
+override r--r--r--  afnanotb/staff for .git/objects/17/88c8ac45d32c3b9237309d3264ed67e55cbdb1? y
+override r--r--r--  afnanotb/staff for .git/objects/17/ef72bb6ad392f3158dd9d6641d95eb86112d58? y
+override r--r--r--  afnanotb/staff for .git/objects/7b/9e280d6ea495cf0c0746bfb24baa92df4b7e02? y
+override r--r--r--  afnanotb/staff for .git/objects/7b/daa03e93dd15a7b8a179463abeac282dc02264? y
+override r--r--r--  afnanotb/staff for .git/objects/7b/c3179c97576b7de64dd62fb923880c02191f39? y
+override r--r--r--  afnanotb/staff for .git/objects/7b/d7dd509aeb1a6035f97baa6da580cf122dc2f6? y
+override r--r--r--  afnanotb/staff for .git/objects/7b/0b0999ce63d2f8e0a267f617047595ead468a8? y
+override r--r--r--  afnanotb/staff for .git/objects/7b/6fed0855a830adf22cd1d672fefa4741e2f440? y
+override r--r--r--  afnanotb/staff for .git/objects/7b/8e4bc980d180dc00df66486e5e7ca4e336923c? y
+override r--r--r--  afnanotb/staff for .git/objects/7b/4aa02ffb5da3091ef778ca7620f153aebcb4c8? y
+override r--r--r--  afnanotb/staff for .git/objects/7b/e7c0341134abee7d3c40f052b3df90e627f320? y
+override r--r--r--  afnanotb/staff for .git/objects/7b/871c642f648b1c6b416b4e7b3ebd921cb07849? y
+override r--r--r--  afnanotb/staff for .git/objects/8f/580e903214bf401583c2141a31746ef356e896? y
+override r--r--r--  afnanotb/staff for .git/objects/8f/ee42304105ca50a9ec5dad5d938d745a52a735? y
+override r--r--r--  afnanotb/staff for .git/objects/8f/5123c30e013267dca175465709d71693a5516e? y
+override r--r--r--  afnanotb/staff for .git/objects/8f/97266256ef7ef73f7c32b200751627e87a275b? y
+override r--r--r--  afnanotb/staff for .git/objects/8f/d845acc53b9c16e29f496904dff3c989111386? y
+override r--r--r--  afnanotb/staff for .git/objects/8a/f265e3b3ec94e8d36c36dc058e1c3a382a5b48? y
+override r--r--r--  afnanotb/staff for .git/objects/8a/bdac936942668a0c0ab15b7899f47d03797c90?
+override r--r--r--  afnanotb/staff for .git/objects/8a/ed5c18b7ca221a22ae610cabca3c627c611a53? y
+override r--r--r--  afnanotb/staff for .git/objects/8a/a1546a72401b0aedaf76c06113443add36005b? y
+override r--r--r--  afnanotb/staff for .git/objects/8a/b3f34f83ad3dad576bd1497c77b81815167897? y
+rm: .git/objects/8a: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/7e/65e1579b5b0ac0c5bbb3fd681022102020e28d? y
+override r--r--r--  afnanotb/staff for .git/objects/7e/8192bf5904b8ebe15cd27a6cce0354d6a00cc9? y
+override r--r--r--  afnanotb/staff for .git/objects/10/f5418e257d6dd139c5d7b8672cae19f509c08a?
+override r--r--r--  afnanotb/staff for .git/objects/10/129a4370daa726e6060ff1ba449ff9a33aed9f? y
+override r--r--r--  afnanotb/staff for .git/objects/10/c84c130dcc10ea64544f44f56e1d5525235094? y
+rm: .git/objects/10: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/19/3bf208106a5dc1d34e7af09300d68af6de12e8? y
+override r--r--r--  afnanotb/staff for .git/objects/19/053406f86fe7df7434330482e8da89a051d3f1? y
+override r--r--r--  afnanotb/staff for .git/objects/19/1069a6e588418ffbf70dc727c47c11dea7dcc3? y
+override r--r--r--  afnanotb/staff for .git/objects/19/3f04ed9e605df9a74b92ee216cff96441ff9ed? y
+override r--r--r--  afnanotb/staff for .git/objects/4c/abe6e7643b0fd1cf36611f23f74d9d6ac6f871? y
+override r--r--r--  afnanotb/staff for .git/objects/4c/f87bda355a6c98464ce0be8b841ea408f7aaab? y
+override r--r--r--  afnanotb/staff for .git/objects/4c/0a136128017b8fdde38c7206930d6b02edd045? y
+override r--r--r--  afnanotb/staff for .git/objects/4c/25163cf0add05e4d437b2dfb763bd2c5b672fa? y
+override r--r--r--  afnanotb/staff for .git/objects/26/9c8f7adb0e666f6378212f2ddee89eecb39470? y
+override r--r--r--  afnanotb/staff for .git/objects/26/9a8ef70628a5b27cc7c028a661b9200d783ff6? y
+override r--r--r--  afnanotb/staff for .git/objects/26/1c3a9bb1613063b40c65c98d9b37e6da3e04f7? y
+override r--r--r--  afnanotb/staff for .git/objects/21/df7c8e8d56a0df7753c31d2ad488d644740bb8? y
+override r--r--r--  afnanotb/staff for .git/objects/4d/a8dd7d0ac67fb61bbc408649765e944393fe5b?
+override r--r--r--  afnanotb/staff for .git/objects/4d/d2a549fd2adcab4956b029a4d0f4b4f9f5345e? y
+override r--r--r--  afnanotb/staff for .git/objects/4d/3c2aa6547d6ec3f2c92bed96a369574bc6866b? y
+override r--r--r--  afnanotb/staff for .git/objects/4d/ac6b7d008fa927c1926510c056b400f0e4c458? y
+override r--r--r--  afnanotb/staff for .git/objects/4d/56296e736fd8ee0d0a12caa7664476e730f391? y
+override r--r--r--  afnanotb/staff for .git/objects/4d/88fe918107f4d6bac3853bbc41de290f9ff65b? y
+override r--r--r--  afnanotb/staff for .git/objects/4d/580d998df1dd8ddd312248443c2ddf1285c94d? y
+rm: .git/objects/4d: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/75/a7dbab30eaf32e4ba1469723a9e6a54ee89454? y
+override r--r--r--  afnanotb/staff for .git/objects/75/ea073c6049feb0ee0f6f082365ce1c26df15d6? y
+override r--r--r--  afnanotb/staff for .git/objects/75/3fe00753677672bcffd1adceac9e3580458ab2? y
+override r--r--r--  afnanotb/staff for .git/objects/75/a8d7f2ab19733571451753972f892f8df89963? y
+override r--r--r--  afnanotb/staff for .git/objects/75/05b1fdd8870d6d36bab77eee39594319f61bbb? y
+override r--r--r--  afnanotb/staff for .git/objects/81/70bbe5b8566ce9734558afc0567d022cf4721b? y
+override r--r--r--  afnanotb/staff for .git/objects/81/d63246b7805633c917ddf24efb84d82d462b8c? y
+override r--r--r--  afnanotb/staff for .git/objects/81/f0782abe98ce9f49a23e1f9337d1c5138d0f9d?
+override r--r--r--  afnanotb/staff for .git/objects/81/bfce7b5ce4a0003aa5db42ab264e7e11f27b54? y
+override r--r--r--  afnanotb/staff for .git/objects/81/57c35ae294bc4d0a5af6094307fc119a6665c4? y
+override r--r--r--  afnanotb/staff for .git/objects/81/1a668b2b904f60d77e707f279b691baac01c80? y
+override r--r--r--  afnanotb/staff for .git/objects/81/a2c5b89c3a4c4bd1023f74ae67cb82bf7ae33c? y
+override r--r--r--  afnanotb/staff for .git/objects/81/a54fdb1acae2998131a0a0b7238fd2a7c96aa0? y
+rm: .git/objects/81: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/86/6d8aa112c9402b9d487ef2635d099651a25503? y
+override r--r--r--  afnanotb/staff for .git/objects/86/12a0d2c7820a605c30f95caaa63776e1883352? y
+override r--r--r--  afnanotb/staff for .git/objects/86/9020d1155cf264caa6479be156789995a5d83d? y
+override r--r--r--  afnanotb/staff for .git/objects/86/780dd557c499788e65727a81bcdda36a3ad2f0? y
+override r--r--r--  afnanotb/staff for .git/objects/86/1103c0f714c33cdd7d0c5712ecc771c1b5d0e8? y
+override r--r--r--  afnanotb/staff for .git/objects/86/d257f50d67f89bedaa2caaecc18ddea5db0608? y
+override r--r--r--  afnanotb/staff for .git/objects/72/e8895c615c05866a3eb25291aebb5b8d85982e? y
+override r--r--r--  afnanotb/staff for .git/objects/44/4979b53a26fcd80ed62874501dd567779bc396? y
+override r--r--r--  afnanotb/staff for .git/objects/44/627e78cb1bddedf46568d28d9fc510b3093d4b? y
+override r--r--r--  afnanotb/staff for .git/objects/44/da5ae9ddecc779f997a0242118714b2a216b7f? y
+override r--r--r--  afnanotb/staff for .git/objects/44/9568b5a6e1bd59395cd085bb77f87df3431073? y
+override r--r--r--  afnanotb/staff for .git/objects/44/647c9df2f7ffb32e2ae3fbc7b1f526f70ef832? y
+override r--r--r--  afnanotb/staff for .git/objects/44/3589657fc24c58a3b2f230d5bd204f2d1ff919? y
+override r--r--r--  afnanotb/staff for .git/objects/2a/4d3cdde5c1c011b508e98c6740de453e5d9499? y
+override r--r--r--  afnanotb/staff for .git/objects/2a/03c1abedb5aed20329c2895990a5f682ceda91? y
+override r--r--r--  afnanotb/staff for .git/objects/2a/55ad94b988c7e4f4b954586670c9242c461689? y
+override r--r--r--  afnanotb/staff for .git/objects/2f/b93cd9c8ed0b5b367cc99d2f2e7dee46ec90e3? y
+override r--r--r--  afnanotb/staff for .git/objects/2f/7fd240b9ce3249300f2a26eaf7fed1ff36e2fb? yy
+override r--r--r--  afnanotb/staff for .git/objects/2f/40479bc9b97949e9a2f74d08fee5801e2d005c? y
+override r--r--r--  afnanotb/staff for .git/objects/2f/7c5159f31fb11566c7395d0c10a7172b34e851? y
+override r--r--r--  afnanotb/staff for .git/objects/88/1f82d967dc2a2aa9d3078dbff3974fd0dc22b3? y
+override r--r--r--  afnanotb/staff for .git/objects/88/2b44e0ff1a65b328dd8f7c2c77ec3f33b0451d? y
+override r--r--r--  afnanotb/staff for .git/objects/88/7ff1044e9dd7be620d58693b6c115e598a5adf? y
+override r--r--r--  afnanotb/staff for .git/objects/88/a6f73488c97c94aae6c9e5c370c3d96f792b03? y
+override r--r--r--  afnanotb/staff for .git/objects/88/464607bf535e3a1258f41bcb27ba4605450101? y
+override r--r--r--  afnanotb/staff for .git/objects/9f/498c4101a1f896f8f924e99b5749b1837f3f2a? y
+override r--r--r--  afnanotb/staff for .git/objects/9f/5e3ba29cd1663bde69f806f60e90480708c64d? y
+override r--r--r--  afnanotb/staff for .git/objects/9f/e10bfc38f841fe6ee65028deef815d5a345387? y
+override r--r--r--  afnanotb/staff for .git/objects/6b/655e19914fcb1cb2f9e9a11a97ee1bc79e62b3? y
+override r--r--r--  afnanotb/staff for .git/objects/6b/cf615c33938478c506b5048af3256ae225ddca? y
+override r--r--r--  afnanotb/staff for .git/objects/6b/84e30da4a5fb3a1550798d546aaba5b754b9e1? y
+override r--r--r--  afnanotb/staff for .git/objects/6b/9a0b879158fc39556b5db3627377808fbf4489? y
+override r--r--r--  afnanotb/staff for .git/objects/6b/ea56bebf7efaa33953c94c73883572bf3659e0? y
+override r--r--r--  afnanotb/staff for .git/objects/6b/fc5691a536efee39f0d4aa2712d08b79bba52e? y
+override r--r--r--  afnanotb/staff for .git/objects/07/3fc6d1359690920430fbe5b70ba586be9563a0? y
+override r--r--r--  afnanotb/staff for .git/objects/07/43ecaecdfbf929dc3179628ebb6eedc18a4b1b? y
+override r--r--r--  afnanotb/staff for .git/objects/38/e125e99e7809e857d706cb2e3f2f6bee84dedd? y
+override r--r--r--  afnanotb/staff for .git/objects/38/68d617946303e4a55087e55f8b02be9cae0baa? y
+override r--r--r--  afnanotb/staff for .git/objects/38/582488d2cae5184a5ee3447d9eae67aee60dd4? y
+override r--r--r--  afnanotb/staff for .git/objects/38/814d864d1522f71aac47692c5c41d97a5021ef? y
+override r--r--r--  afnanotb/staff for .git/objects/38/60b1c962e58cd22b7f90441daf70c1a2c019e1? y
+override r--r--r--  afnanotb/staff for .git/objects/38/97393c1fdd51233defeef413e04dacd2a24dba? y
+override r--r--r--  afnanotb/staff for .git/objects/38/0bec7a7e830c58b77e55c42d6703ca6f2ddc15? y
+override r--r--r--  afnanotb/staff for .git/objects/38/90b0ac8fad91530a7459e593e30853c409c0aa? y
+override r--r--r--  afnanotb/staff for .git/objects/00/5d8c29def36da4dbce75afd28fa0de325583a4? y
+override r--r--r--  afnanotb/staff for .git/objects/00/27c982256db95a0777ed359b29986a4ede7581? y
+override r--r--r--  afnanotb/staff for .git/objects/00/c927bea5f23c414bc7db84b569fdba417d9785? y
+override r--r--r--  afnanotb/staff for .git/objects/00/6cf7fbf0f9a5621fe9af221a5070ce53741e8f? y
+override r--r--r--  afnanotb/staff for .git/objects/00/dfe93bfc6f7b58f3fcb870fcb04f0c5a272610? y
+override r--r--r--  afnanotb/staff for .git/objects/6e/7b651592ca7fa4a209c88e65d4fb62f8d08d02? y
+override r--r--r--  afnanotb/staff for .git/objects/6e/tmp_obj_3TY3ba? y
+override r--r--r--  afnanotb/staff for .git/objects/6e/3927ebf3f3352d11bc8c800089bf2461ac2208? y
+override r--r--r--  afnanotb/staff for .git/objects/6e/708db4ab1bb17eecf221e77eba2590d5f52605? y
+override r--r--r--  afnanotb/staff for .git/objects/6e/e49f2835b50ebe250ec541d06920ab8fca289b? y
+override r--r--r--  afnanotb/staff for .git/objects/6e/0fa5281e89b807268879e17d7eadfb2a54c67b? y
+override r--r--r--  afnanotb/staff for .git/objects/9a/2031e17186a7c6501f10c1e84418eb0198699a? y
+override r--r--r--  afnanotb/staff for .git/objects/9a/3d302c75da7a0225e2cd9c9047ac4d4ae2e451? y
+override r--r--r--  afnanotb/staff for .git/objects/36/c325d2ea113bc1fa57e54ca70a5be347fdafcb? y
+override r--r--r--  afnanotb/staff for .git/objects/36/d749c058fda8e51d502c4f5b3400aa1ad25684? y
+override r--r--r--  afnanotb/staff for .git/objects/36/1c6a8ad1696ed32e92b6cd98afc0e6c35fc7c6? y
+override r--r--r--  afnanotb/staff for .git/objects/36/73fff8963f9f674050683109e20c7cd7040d62? y
+override r--r--r--  afnanotb/staff for .git/objects/5c/cd1cca4bb9208930df285bd0abae1b0471d0c0? yy
+override r--r--r--  afnanotb/staff for .git/objects/5c/2e17ccc7fcdbf1c75c2fc9b608aebdfaf4a96a? y
+override r--r--r--  afnanotb/staff for .git/objects/5c/f0ecea7d54b38fed4ec377cb45e1df0f981300? y
+override r--r--r--  afnanotb/staff for .git/objects/09/9b3f5bb84641cd4c08ec38ee00e71f1cd40319? y
+override r--r--r--  afnanotb/staff for .git/objects/09/3d1ce8467a24c51a840631782daaf0cc901053? y
+override r--r--r--  afnanotb/staff for .git/objects/09/6c6a84ad4b3ba609a845d5a6efbf7041201679? y
+override r--r--r--  afnanotb/staff for .git/objects/09/dab00dc9b93e9c60b02ca945eff2550ab10b38? y
+override r--r--r--  afnanotb/staff for .git/objects/09/6318a829f288a4fad69c3f11bff56da89c4d69? y
+override r--r--r--  afnanotb/staff for .git/objects/5d/30510f65dc95f3f0845c651f4e1061f81cc486? y
+override r--r--r--  afnanotb/staff for .git/objects/5d/076236f631c972e7cd9b13bc68291f468a3471? y
+override r--r--r--  afnanotb/staff for .git/objects/31/5386060d3cb340d2826fe68bc997b8de320dc7? y
+override r--r--r--  afnanotb/staff for .git/objects/91/ce6b63b0f2bd62db1dededae4f30ebd74c3810? y
+override r--r--r--  afnanotb/staff for .git/objects/65/f9aeed20cdb2ef0d91ba678b0811c0991409b7? y
+override r--r--r--  afnanotb/staff for .git/objects/65/7b509de1e0a693e1f01e6fdfa1ba49c8f45ea6? y
+override r--r--r--  afnanotb/staff for .git/objects/65/b3f05632fa81dfbec88aa220b2cf45d5bfb054? y
+override r--r--r--  afnanotb/staff for .git/objects/65/cf1b1b7dc9700ada1f3412ca2605ac7bb6b226? y
+override r--r--r--  afnanotb/staff for .git/objects/62/a94dd8f5429188fbb0f2d38d6b7f27af45dec6?
+override r--r--r--  afnanotb/staff for .git/objects/62/28ccf7b3e7e4efbad4a0e4770a69e256648a63? y
+override r--r--r--  afnanotb/staff for .git/objects/62/f7bc5d1bd22b69f2a108523e410ea9c86f207e? y
+override r--r--r--  afnanotb/staff for .git/objects/62/d5ac3a2faad1409b9c57fefd017a985de00043? y
+override r--r--r--  afnanotb/staff for .git/objects/62/ef82995d579b57f3725dbf6e4cd62683fd1be5? y
+override r--r--r--  afnanotb/staff for .git/objects/62/2dea92246f24aa0209576bc0d60578f154a7ea? y
+rm: .git/objects/62: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/96/5ff70d3c0d2b2baeb683dbebf5f57e55ab2ffa? y
+override r--r--r--  afnanotb/staff for .git/objects/96/3f6545df98402659340a44f446fbcb2943c27d? y
+override r--r--r--  afnanotb/staff for .git/objects/96/fb450f3fca9d0854552855864d4d8eb449aa99?
+override r--r--r--  afnanotb/staff for .git/objects/96/1e2d1391952dcb3a8842c09b5ae959ccbf5a00? y
+override r--r--r--  afnanotb/staff for .git/objects/96/f7b7f24280e83d36f9e279dacfe63e24092f53? y
+rm: .git/objects/96: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/3a/6ffc7fb07761cccbf7523a89b7ac871c81ab0c? y
+override r--r--r--  afnanotb/staff for .git/objects/3a/04aa8bf8aee3ab2a2d155f18e2039c3172f4d7? y
+override r--r--r--  afnanotb/staff for .git/objects/3a/415bec4de5d5610974b7002dde84c2d9a53622? y
+override r--r--r--  afnanotb/staff for .git/objects/54/1cde614b376166735660487cd162befcf937c8? y
+override r--r--r--  afnanotb/staff for .git/objects/54/4c3a67033496817ce570d6383db79ca4618ba2? y
+override r--r--r--  afnanotb/staff for .git/objects/54/687259739440e55d8116e059dc07ea5bde583f? y
+override r--r--r--  afnanotb/staff for .git/objects/54/0b6949c9c1551cb44f8098c7c1d9ba32ecb846? y
+override r--r--r--  afnanotb/staff for .git/objects/54/f7ae4dfde78c4e8386ea41e4c87db340fc6c6c? y
+override r--r--r--  afnanotb/staff for .git/objects/98/4acc0e4abdef7f637250a9e48044694362b1c3? y
+override r--r--r--  afnanotb/staff for .git/objects/98/aaf8bb0f548336b2917afa1850a23a23e404e8? y
+override r--r--r--  afnanotb/staff for .git/objects/98/726da98476e92339951b9a6ae0aca69e5152fc? y
+override r--r--r--  afnanotb/staff for .git/objects/98/a895f580e2e4813b04b5c04936e6f0ce88206a? y
+override r--r--r--  afnanotb/staff for .git/objects/98/56e5d915b766c39289bb1b8b352864b4dc173e? y
+override r--r--r--  afnanotb/staff for .git/objects/98/c1481abbb993cd83692fdc81d1746f7163f0ba? y
+override r--r--r--  afnanotb/staff for .git/objects/53/c120ef478bd78f49a8973b1032243eb0a188d4? y
+override r--r--r--  afnanotb/staff for .git/objects/53/2a4628620666ec921aea83dc262b74c7b4e287? y
+override r--r--r--  afnanotb/staff for .git/objects/3f/a4b947443eacf27af80861613fcd62a18a128e? y
+override r--r--r--  afnanotb/staff for .git/objects/3f/8a742b3a38d82eff215e7689cb835051e9ac37? y
+override r--r--r--  afnanotb/staff for .git/objects/3f/d45cadb8aaee157c5a69d7a728fce19d2394b5? y
+override r--r--r--  afnanotb/staff for .git/objects/3f/fa8b9f6b8e317d67c4812f04829ac6784ca334? y
+override r--r--r--  afnanotb/staff for .git/objects/30/cc85caeba5430ee87386542e4ffc448f063b02? y
+override r--r--r--  afnanotb/staff for .git/objects/30/c7029c4b54bc19dd9e9010cfb2242f28ff18e5? y
+override r--r--r--  afnanotb/staff for .git/objects/30/42867830450568ddddfd12948e4af386997dc7?
+override r--r--r--  afnanotb/staff for .git/objects/30/486a2cbea12d48e0113bb6ab728702fc0143b9? y
+override r--r--r--  afnanotb/staff for .git/objects/30/e9f903fdcfe54dba24a2a01819f3217e94a3ea? y
+override r--r--r--  afnanotb/staff for .git/objects/30/afdc572ff22d75b5d06f5e3ce460c274a34bdd? y
+override r--r--r--  afnanotb/staff for .git/objects/30/bd1380ec23ddedba02940f087c55a8156b2353? y
+override r--r--r--  afnanotb/staff for .git/objects/30/b4c3b54943ab111170bc69d90f2520925db2bc? y
+override r--r--r--  afnanotb/staff for .git/objects/30/98fd9627c0c8b30a64c55e50b39de4a546515b? y
+rm: .git/objects/30: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/5e/36e38f3025ab5df8e57a3fcb158f186dcfc29e? y
+override r--r--r--  afnanotb/staff for .git/objects/5e/c676568f57705add10c1281f3d83ea17cc662a? y
+override r--r--r--  afnanotb/staff for .git/objects/5e/cd951be80eb293794bd535ebea47d221dd8d44? y
+override r--r--r--  afnanotb/staff for .git/objects/5e/297903701b79d807c3b16575254aa719d78cc9? y
+override r--r--r--  afnanotb/staff for .git/objects/5b/93116c53637b349f3b7263f3e7c2bd7d593b4d? y
+override r--r--r--  afnanotb/staff for .git/objects/5b/fe2cb7296f07005e54d05a51af59eeb6b77732? y
+override r--r--r--  afnanotb/staff for .git/objects/5b/4f03262f57b782c683f2323f9017dba9a7a5fd? y
+override r--r--r--  afnanotb/staff for .git/objects/5b/5ae9b276790877b4e85c4940a50d1e342cd4e9? y
+override r--r--r--  afnanotb/staff for .git/objects/37/50fb1b86d99d42c6a86c1aa722dce0b2b5b875? y
+override r--r--r--  afnanotb/staff for .git/objects/37/8226ad7eaa6a689fc36078cbe7c242e7de38b3? y
+override r--r--r--  afnanotb/staff for .git/objects/08/139d36740118b4ccf3e6041213078d125af3c1? y
+override r--r--r--  afnanotb/staff for .git/objects/08/a527cb3a73f3df44b876a094ceca8ee3bd1b83? y
+override r--r--r--  afnanotb/staff for .git/objects/08/5f57b9c83c23563c5233775ce4001c52129d41? y
+override r--r--r--  afnanotb/staff for .git/objects/6d/49698cf1602fdbc47eb520cd9affa1ced494b9? y
+override r--r--r--  afnanotb/staff for .git/objects/6d/9ffe2b4ed1c7ff373cc2bc34366603d1fa4aa4? y
+override r--r--r--  afnanotb/staff for .git/objects/6d/e5e965cf35ab379082fde6fd832857c6f9aebe? y
+override r--r--r--  afnanotb/staff for .git/objects/6d/6971fc71c6c14e3435b2808520f5c5be3e44ca? y
+override r--r--r--  afnanotb/staff for .git/objects/01/0f916766624380862cbb8f4066cc8b3c120816? y
+override r--r--r--  afnanotb/staff for .git/objects/01/d259678a64bbbd32fb600de75117166f324c1a? y
+override r--r--r--  afnanotb/staff for .git/objects/06/4f3d75a9d1d5bfdc6e24cad10202c763b9fad8? y
+override r--r--r--  afnanotb/staff for .git/objects/06/5df1b47db14572eeebbcfe6ac7d07f00e510ab?
+override r--r--r--  afnanotb/staff for .git/objects/06/9ac3c6ab9d0827d2174f028906d47cd30022b3? y
+override r--r--r--  afnanotb/staff for .git/objects/06/0053e83b9ce2ab1e330ffab6d18c3a6414b3c1? y
+override r--r--r--  afnanotb/staff for .git/objects/06/c4d826e6d9a9c7ac1088c79c04a277ed1181ec? y
+override r--r--r--  afnanotb/staff for .git/objects/06/bb40bb8ff09b3e5fea5e465ef997db84f265c4? y
+override r--r--r--  afnanotb/staff for .git/objects/06/a6b24326853eb47096cd95978eb0a08e8118f6? y
+rm: .git/objects/06: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/6c/5790464c24b832e2eb87354396141623409a33? y
+override r--r--r--  afnanotb/staff for .git/objects/39/e216aa1ed2bb96964e5fc66d0ebf7e82e0feb6? y
+override r--r--r--  afnanotb/staff for .git/objects/99/df98b493f16affd6d142010b366fee9219c994? y
+override r--r--r--  afnanotb/staff for .git/objects/99/134a6dba4ae582a6219d73328b9fec249cfa1e? y
+override r--r--r--  afnanotb/staff for .git/objects/99/564e196d1c57dd24232ce96d77b496b7889a2c? y
+override r--r--r--  afnanotb/staff for .git/objects/99/41b23325a8847777543ab2bd3cad23010df61c?
+override r--r--r--  afnanotb/staff for .git/objects/99/6f2dda68b715b18890c56d8b560343bac5bb7d? yy
+override r--r--r--  afnanotb/staff for .git/objects/99/db076ab916aae4badb20bdcf4d5c62a7dc597e? y
+override r--r--r--  afnanotb/staff for .git/objects/99/773723512384b490f2844d71e7ebd850340da4? y
+rm: .git/objects/99: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/52/f0573398fc9c423f7ccbf878db30312a1a5f13?
+override r--r--r--  afnanotb/staff for .git/objects/52/3fda9b2f95c823aa733d55368ff7cc2c38d508? y
+override r--r--r--  afnanotb/staff for .git/objects/52/e8223b50c271fdfecc2a88cbf4c637e94946df? y
+override r--r--r--  afnanotb/staff for .git/objects/52/34476c01b56388cead987bee81945588f01d45? y
+override r--r--r--  afnanotb/staff for .git/objects/52/6d9b1cbeedb109d35280ac975f6917e8c8ca60? y
+rm: .git/objects/52: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/55/9de96f66a7ce4a8c3d8e6de67cf6748f1fd1df? y
+override r--r--r--  afnanotb/staff for .git/objects/55/49010eb819c979e25880ed0700b7160870f994? y
+override r--r--r--  afnanotb/staff for .git/objects/97/52e2a1c8713b95fade4c2e27937e2957a95529? yy
+override r--r--r--  afnanotb/staff for .git/objects/97/7493589b441e66254051cf0ca48dc3c0617ca9?
+override r--r--r--  afnanotb/staff for .git/objects/97/513e97db3fbbe0a0674d9c980c072da56f9240? y
+override r--r--r--  afnanotb/staff for .git/objects/97/a54b97fe7e8f7702fe210f2100a5b090bccaa9? y
+override r--r--r--  afnanotb/staff for .git/objects/97/b77f908e40167e6ec26a6b16c9085756c6b8ea? y
+override r--r--r--  afnanotb/staff for .git/objects/97/fd12c7f3ff246b1fdc54c46af68bd71f4bd141? y
+rm: .git/objects/97: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/63/93c1839db7ba1e8482a1cb3a93d132e89550b2? y
+override r--r--r--  afnanotb/staff for .git/objects/63/3a0364306e103008bfd11089834034a0c5523d? y
+override r--r--r--  afnanotb/staff for .git/objects/63/b26b8b0b15f76d4c5739307e45d3ed66cc414c? y
+override r--r--r--  afnanotb/staff for .git/objects/63/94975b3fbbed3bdfac7a5c9ea4c1699b818ff6? y
+override r--r--r--  afnanotb/staff for .git/objects/63/4ed4262bf40c634f9f7fdd3e49826c92294ab5? y
+override r--r--r--  afnanotb/staff for .git/objects/0f/692bcac821dedf073567a1bad397dfdaca2f7b? y
+override r--r--r--  afnanotb/staff for .git/objects/0f/5e2493291c50df97123dc86d68b7789d0fd0ad? y
+override r--r--r--  afnanotb/staff for .git/objects/0f/a54420cb322cc7e2c469589e48b99d68b71241? y
+override r--r--r--  afnanotb/staff for .git/objects/0f/d2c431cfa643293743beb7b0320e799fac3065? y
+override r--r--r--  afnanotb/staff for .git/objects/0a/fbd15c0792cad3cdaf65d80f984b86a90eb695? y
+override r--r--r--  afnanotb/staff for .git/objects/0a/072ad94994d63adc9894214d7198d2ef98d897? y
+override r--r--r--  afnanotb/staff for .git/objects/0a/095a70f793a40a872dd6fa3145b558607be43b? y
+override r--r--r--  afnanotb/staff for .git/objects/0a/174e3c7f16bd3c761ca682a3c5ce41f61f8e61? y
+override r--r--r--  afnanotb/staff for .git/objects/64/c265d3e9f3f1d8e9486b0c6562beb6249452e5? y
+override r--r--r--  afnanotb/staff for .git/objects/64/219e631ab9babdc9eb78137478bde2c2cabec8?
+override r--r--r--  afnanotb/staff for .git/objects/64/258c9fd87a7dd5511853c8bb42f261ab0e4f11? y
+override r--r--r--  afnanotb/staff for .git/objects/64/df365d87bcab9e73f876352496dac6b5dddc5b? y
+rm: .git/objects/64: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/90/cb084e27dc2dc682ff3776aceaf9712d9b2873? y
+override r--r--r--  afnanotb/staff for .git/objects/90/7a8e84fe0c02dcc63825f5ef2cee251916cc08? y
+override r--r--r--  afnanotb/staff for .git/objects/90/a1d0a89901033e8e488883bf9d95e4299573c3?
+override r--r--r--  afnanotb/staff for .git/objects/90/9318e996772e724302578ac4bce2ca1844efea? y
+override r--r--r--  afnanotb/staff for .git/objects/90/70d4d619fea2e5d9c6e18b1bc574e8c53e9e19? y
+rm: .git/objects/90: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/bf/badea952ad9c3605f8e4345e7c7b210437a8f8? y
+override r--r--r--  afnanotb/staff for .git/objects/bf/8ed8d2dadbae977c954cff892659182ddc7061? y
+override r--r--r--  afnanotb/staff for .git/objects/bf/a86593d2a590967e5f2532765eb2d3b9ba5023? y
+override r--r--r--  afnanotb/staff for .git/objects/bf/a665399dde7883b86365d8b63f86ddf6c994ec? y
+override r--r--r--  afnanotb/staff for .git/objects/d3/6abac0159ccce5718fe68ea870fc40d6a08c33? y
+override r--r--r--  afnanotb/staff for .git/objects/d3/f680950762af28adcce69b7118ac7d056492f9?
+rm: .git/objects/d3: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/d4/6296affd6af69d4b9a30a3d77258692e65659e? y
+override r--r--r--  afnanotb/staff for .git/objects/d4/6e2df6b1e0fe1b7af371952c8c8651617cc1e9? y
+override r--r--r--  afnanotb/staff for .git/objects/d4/29bfdc27d1ec15f4cc1401b8004c1ec9670b99?
+override r--r--r--  afnanotb/staff for .git/objects/d4/099c686a9a72009fd31b96a9ba4497e6273c79? y
+override r--r--r--  afnanotb/staff for .git/objects/d4/278959f02382fc0c2e8281b31bccb12c05db69? y
+override r--r--r--  afnanotb/staff for .git/objects/d4/2fb7d0efc8fd6548534482fb1c34fa8760276e? y
+override r--r--r--  afnanotb/staff for .git/objects/d4/8862dfff1a0944d3f943876edc3912c1688951? y
+rm: .git/objects/d4: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/ba/cb27d48758a691d47c4ad7e4aa8202797d38e3? y
+override r--r--r--  afnanotb/staff for .git/objects/ba/35968fcce07dd5c18af0200a05739c6a5ed22c? yy
+override r--r--r--  afnanotb/staff for .git/objects/ba/27f4b58be11c5ebd157da08399faed75ad8eeb? y
+override r--r--r--  afnanotb/staff for .git/objects/ba/329bd835792c0801bf8087e042d2efaa7b5a26? y
+override r--r--r--  afnanotb/staff for .git/objects/ba/3b000242351c3265a3ea8df1375395e0efb47e? y
+override r--r--r--  afnanotb/staff for .git/objects/ba/1a3e541faea5f1dbfaa82cf9f4a00b6aa86282? y
+override r--r--r--  afnanotb/staff for .git/objects/ba/e8c67bd534377acf9055b6e0df9a938ef10a86? y
+override r--r--r--  afnanotb/staff for .git/objects/a0/2f49eaf9097a0e0ba90580ee4735b6d7420ffa? y
+override r--r--r--  afnanotb/staff for .git/objects/a0/8e28f4942a64eeac3d7c7f8dd3bcf50411b246? y
+override r--r--r--  afnanotb/staff for .git/objects/a0/c9098060da3904d89863aee8f6a2cfd4baa70c? y
+override r--r--r--  afnanotb/staff for .git/objects/a7/e7daac554f01f6b025ee4bc3416aa671f0eb85? y
+override r--r--r--  afnanotb/staff for .git/objects/a7/f7ad76002a1dbabd6a078d2143bc665181d44b? y
+override r--r--r--  afnanotb/staff for .git/objects/a7/d10a9ead663c407b19b76414952c21605b5854? y
+override r--r--r--  afnanotb/staff for .git/objects/b8/366d78646425b8561840785bb71f5030848a3f? y
+override r--r--r--  afnanotb/staff for .git/objects/b8/45ef4175f25142db34a97e9ebc013033a689ca? y
+override r--r--r--  afnanotb/staff for .git/objects/b1/2ee471deb7b70ddacc265ff8065e0fa7c4c334? y
+override r--r--r--  afnanotb/staff for .git/objects/b1/ded4f382f8d51b5e60deed701f3426e1fc6dd2? y
+override r--r--r--  afnanotb/staff for .git/objects/dd/8eff858b83663eec3690a84f41d88e732d091a? y
+override r--r--r--  afnanotb/staff for .git/objects/dd/b0ef500f4ae94c2575f5520a7db30a16a45da0? y
+override r--r--r--  afnanotb/staff for .git/objects/dd/f0a49d4aa357a261a284cbd53e57fca0173626? y
+override r--r--r--  afnanotb/staff for .git/objects/dd/dc82c241cda8764d8b45e020bb2591eb1e4760? y
+override r--r--r--  afnanotb/staff for .git/objects/dc/59e2b5959e0850c56fecba1992520dfaba2298? y
+override r--r--r--  afnanotb/staff for .git/objects/dc/40e16b885c883500268a382becdf19228e0552? y
+override r--r--r--  afnanotb/staff for .git/objects/dc/dcb50fa691470ce9d87092f826a282f3ba96e2? y
+override r--r--r--  afnanotb/staff for .git/objects/dc/df70d95f5d8700f77ad1d9e192f979daaf09dd? y
+override r--r--r--  afnanotb/staff for .git/objects/b6/5e39fab3e29f2dbf3f57d6f1645aea013cea29? y
+override r--r--r--  afnanotb/staff for .git/objects/b6/c3c1eaec0cc3015c43c230ecf032cbfeb95bed? y
+override r--r--r--  afnanotb/staff for .git/objects/b6/e34bb8968fcabcda011f7a094979bb7dd7556f? y
+override r--r--r--  afnanotb/staff for .git/objects/a9/328a236addf21b01c5da430b4e8407feb97078? y
+override r--r--r--  afnanotb/staff for .git/objects/a9/c536aa81ef39aecd6a9d4404c28c69584c8be3? y
+override r--r--r--  afnanotb/staff for .git/objects/a9/2892df810a65a029d3abf55d13dc5a4165cb63? y
+override r--r--r--  afnanotb/staff for .git/objects/a9/0b028664ed61012a438d27074dd15a27e2d2b7? y
+override r--r--r--  afnanotb/staff for .git/objects/a9/ec2471ec5469fbb630f799b32101dc3e3d08a5? y
+override r--r--r--  afnanotb/staff for .git/objects/d5/1c2b2ee8e0ffd57946be44dac5c4ad1fa5687b? y
+override r--r--r--  afnanotb/staff for .git/objects/d5/fec61934c0e82ba28bf7df631738a774756dbb? y
+override r--r--r--  afnanotb/staff for .git/objects/d5/79b303d2869de694b52acb8f059696e817a4a7? y
+override r--r--r--  afnanotb/staff for .git/objects/d5/9621e8e2c02fccec0abdc1b1d012f9117dee13? y
+override r--r--r--  afnanotb/staff for .git/objects/d5/43f0366390bed1af75d882f1f37caa1139be34? y
+override r--r--r--  afnanotb/staff for .git/objects/d5/2d9264c06b8ae7372ae493d65ed150d5dc2b02? y
+override r--r--r--  afnanotb/staff for .git/objects/d2/aad97607d144410458d5b359628a8214c0d13e? y
+override r--r--r--  afnanotb/staff for .git/objects/d2/4ada9cadd22cf809116f8023d78951986e0505? y
+override r--r--r--  afnanotb/staff for .git/objects/d2/5f5b7e03e80e8a4b8d7579a6896e8cbf3c510c? y
+override r--r--r--  afnanotb/staff for .git/objects/aa/5433d75dfa7f23434875f17eb637425401f646? y
+override r--r--r--  afnanotb/staff for .git/objects/aa/7973df5c34cb3be1165a6e5695af0907442383? y
+override r--r--r--  afnanotb/staff for .git/objects/aa/8d4dc430820a8bcb35b8a10edd48a463371d77? y
+override r--r--r--  afnanotb/staff for .git/objects/af/e8170b11499425c308c315a593148231eb6f96? y
+override r--r--r--  afnanotb/staff for .git/objects/af/2358411a59309691580a124d7798d0ebe0d99a? y
+override r--r--r--  afnanotb/staff for .git/objects/af/28bbed83534e3abd5efe236efa121ae31ddbbd? y
+override r--r--r--  afnanotb/staff for .git/objects/af/d203202c02ab76c47c86c017d49a1fc731fe25? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/3cd6785d0d00a94a68da02e77f4f31b1c91107? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/852650d2f0f7dcff8c551a9b54455edd35a594? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/63ec23a21d9925a3fa5459fd46f4ae3d0915c4? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/670570a85022bd9edc48568751884624170d8c? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/17ddcb0f98fe0672ec6b229c842619bc664125? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/a78e6bb658b5f081da49e39cbd0c5bd77e0c36? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/54d5144f986e3cb96c6ba1814a4345c44cd4f8? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/daace2c7c2655c41e214734f72a54e67417dd1? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/106dc1b6c2c45f7d3d2f0a4bea43fc5ec61c6a? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/7772cf9a2ffca7e58de13cd05c2a1f0059b398? y
+override r--r--r--  afnanotb/staff for .git/objects/b7/473006bedb72cc845800baf0a641ed4555bdab? y
+override r--r--r--  afnanotb/staff for .git/objects/db/18bbec570b693bb9870d564f2810064ef901a4? y
+override r--r--r--  afnanotb/staff for .git/objects/db/9e0dc9b3e623d59cee30edf432e5896ba82604? y
+override r--r--r--  afnanotb/staff for .git/objects/db/6eb7928bd65492c1332e9ffa005a80cc261130? y
+override r--r--r--  afnanotb/staff for .git/objects/db/3ba20a9b6aecadc6d8cd8eb62fb7fb5ee03a29? y
+override r--r--r--  afnanotb/staff for .git/objects/db/08b780ebd4498aef6329f4bf785dab85af8fad? y
+override r--r--r--  afnanotb/staff for .git/objects/a8/10baa323e996a8dfa7cfcba274a46c64148948? y
+override r--r--r--  afnanotb/staff for .git/objects/a8/c36149377cdd64fabf5b92af3d8823cf083e59? y
+override r--r--r--  afnanotb/staff for .git/objects/a8/b92ef8cf88d2daac0d868b85b8819f40d03a9f? y
+override r--r--r--  afnanotb/staff for .git/objects/a8/3be36aa2043378db167b2600eb4468c71e9041? y
+override r--r--r--  afnanotb/staff for .git/objects/a8/089a8f9996bf26e955270bd1c0bef86b7fe12a? y
+override r--r--r--  afnanotb/staff for .git/objects/a8/8a1817a9392fe370af46a49edbea5560f98d2c?
+override r--r--r--  afnanotb/staff for .git/objects/a8/e52137bc29bdd0f0c1fbeecf6ec8df6504997f? y
+override r--r--r--  afnanotb/staff for .git/objects/a8/973bb319ce41cc995b341147dc4237cae50634? y
+override r--r--r--  afnanotb/staff for .git/objects/a8/37cbc0065c13a3f035c539819bd4d9457de37c?
+override r--r--r--  afnanotb/staff for .git/objects/a8/6fa0c2cea6a135844308e2745e3fb4060d625f? yy
+rm: .git/objects/a8: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/de/c153e23e357a479cf58e2743a8f11260cea8eb?
+override r--r--r--  afnanotb/staff for .git/objects/de/4d1e2395cdf38d0f7c0dcd34e2a05cf2e8fa75? y
+rm: .git/objects/de: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/b0/0f2c2c3a644ef069e042dc3a4ac5ecb4d3578d? y
+override r--r--r--  afnanotb/staff for .git/objects/b0/45cb66e9d3e8b4615c694add8c75a98a193a4b? y
+override r--r--r--  afnanotb/staff for .git/objects/b0/48b01b5646d8deb84ace43c9d62eb9b8af2534? y
+override r--r--r--  afnanotb/staff for .git/objects/b0/3b3f9dc19e2b3f8a0ea0630691dd65f739ef90? y
+override r--r--r--  afnanotb/staff for .git/objects/b0/801203c76b5e5955a275c47897888e0d470717? y
+override r--r--r--  afnanotb/staff for .git/objects/b0/15cdb683a3d84184d3132abdeaf72515206a79? y
+override r--r--r--  afnanotb/staff for .git/objects/a6/f8ad585b9a25921ad3bcdea626a8502d0712b9? y
+override r--r--r--  afnanotb/staff for .git/objects/a6/34e4a6ef1ede9127a3512508b4ee3e9047370b? y
+override r--r--r--  afnanotb/staff for .git/objects/a6/dc4f97971db7836d6d651eeed399f81d90276e? y
+override r--r--r--  afnanotb/staff for .git/objects/a6/146b2591e31a6093453dfacb6e3eb22356b169? y
+override r--r--r--  afnanotb/staff for .git/objects/a6/9e322fecb8de11928f14241c7ba11d5d26611e? y
+override r--r--r--  afnanotb/staff for .git/objects/a6/4ddf943fac6ac3241a70700a1610cee9c1a14c? y
+override r--r--r--  afnanotb/staff for .git/objects/b9/b4302dc5e0e113484a3e065a1ad3185eccab73? y
+override r--r--r--  afnanotb/staff for .git/objects/b9/fe30851ae85fc18abb1bfddd8c6becf1dffeb0? y
+override r--r--r--  afnanotb/staff for .git/objects/b9/700239274a0bf3e6a4780f7f1510256de6beec? y
+override r--r--r--  afnanotb/staff for .git/objects/b9/8d361c374d384111ab3670610781a633c778cd? y
+override r--r--r--  afnanotb/staff for .git/objects/a1/aea6082dd47fda9a234676568b64dd85d50410? y
+override r--r--r--  afnanotb/staff for .git/objects/a1/5c2e8200ec6af7ada1b1a2040bb5b821aa462c? y
+override r--r--r--  afnanotb/staff for .git/objects/a1/c56385e6a13ebd6f2b5d87cc791ed1f822000c? y
+override r--r--r--  afnanotb/staff for .git/objects/a1/d8f4de35e53b142a7fee7539e1ed029f49cfd5? y
+override r--r--r--  afnanotb/staff for .git/objects/a1/76d250d6bb87f2768fa1611e171124e4834142? y
+override r--r--r--  afnanotb/staff for .git/objects/a1/5910e1d680cb8bf34d99b162baf27d257625de? y
+override r--r--r--  afnanotb/staff for .git/objects/a1/d3cd5d14e638b2a8354f2df8bfa11b26c1c5a7? y
+override r--r--r--  afnanotb/staff for .git/objects/a1/1eea239dd61710a2b6faebcc7afb7dabbeb451? y
+override r--r--r--  afnanotb/staff for .git/objects/ef/9d0d3f2d2c14deb0b286f1de5e2ffb676bbc26? y
+override r--r--r--  afnanotb/staff for .git/objects/ef/7f757cbc4d0b1af78638265c10bde260b35582? y
+override r--r--r--  afnanotb/staff for .git/objects/ef/b1db0aba97defd29a8858679d3b0a2883f0cab? y
+override r--r--r--  afnanotb/staff for .git/objects/c3/f778210d7ea26021c66673d44b879aafd56257? y
+override r--r--r--  afnanotb/staff for .git/objects/c3/b6e22161c3e4b6e8e9bb51057d06b95705cdd8? y
+override r--r--r--  afnanotb/staff for .git/objects/c3/5ad4d1fd78d81fc59feea92138f6fbd5e0acd9? y
+override r--r--r--  afnanotb/staff for .git/objects/c3/a16322bf4d3a05af082921091a240fa4dc42c0? y
+override r--r--r--  afnanotb/staff for .git/objects/c4/4f91410f6e97e1a567c4d1cda0e0829065702a? y
+override r--r--r--  afnanotb/staff for .git/objects/c4/919c350cb715a34c264c55e548db3fb36038b4? y
+override r--r--r--  afnanotb/staff for .git/objects/c4/e49ebd5fa39149001eff37317161747a45bcd5? y
+override r--r--r--  afnanotb/staff for .git/objects/ea/dae048db88848b32c08ef255a07a2f427d6a85? y
+override r--r--r--  afnanotb/staff for .git/objects/ea/13083a08ad03a6dce90588a9525af672ed1c99? y
+override r--r--r--  afnanotb/staff for .git/objects/e1/bf72b6eb90b7abe3fad7a439905d7de2aae8ec? y
+override r--r--r--  afnanotb/staff for .git/objects/e1/f1fa89c15080f3168dc5585469f2aafc9d0d62? y
+override r--r--r--  afnanotb/staff for .git/objects/e1/35c5f230220aace199cad2b6086995cbbe3a18? y
+override r--r--r--  afnanotb/staff for .git/objects/e1/8f48db1b7f93155db75535993a630cdd1e4ad8? y
+override r--r--r--  afnanotb/staff for .git/objects/e1/66a8dab9eb285774c2e89a2e4f106640353cce? y
+override r--r--r--  afnanotb/staff for .git/objects/e1/c61c49eae8acd59db0d024adc08f4ca8de1128? y
+override r--r--r--  afnanotb/staff for .git/objects/cd/c6ba788f3f58e9f0dea4e10d6b654235615203? y
+override r--r--r--  afnanotb/staff for .git/objects/cd/ccc29d4286bb60085c3491f6ff757030d32736?
+override r--r--r--  afnanotb/staff for .git/objects/cd/66bba04d7c534d2cda3f38e6e0c2d1f8085767? y
+override r--r--r--  afnanotb/staff for .git/objects/cd/d8d0d250929bdca53382f6fa8f31a93bfd7ed0? y
+override r--r--r--  afnanotb/staff for .git/objects/cd/b30f2c86fb7f899d07ade99a672ecbb742ec59? y
+override r--r--r--  afnanotb/staff for .git/objects/cd/2849f00394c30ac991264014a8eec353ad62b8? y
+override r--r--r--  afnanotb/staff for .git/objects/cd/6e3460013a4365b6db587bd14dad3b2197cdd6? y
+rm: .git/objects/cd: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/cc/74ef27d3c369e93faa4ccd99502774a5e1e8f9? y
+override r--r--r--  afnanotb/staff for .git/objects/cc/cd76beced80c149de88f28e13bc509aa9d9821? y
+override r--r--r--  afnanotb/staff for .git/objects/cc/68e700da500bf735115bcb92152d1b6a14ef81? y
+override r--r--r--  afnanotb/staff for .git/objects/e6/eb1b413ba4822eb06eb84b1fdef1b45204c209? y
+override r--r--r--  afnanotb/staff for .git/objects/e6/ed8ad32c3c775cef1059faf7a7e60466388159? yy
+override r--r--r--  afnanotb/staff for .git/objects/e6/ebb333217c560c3c4e51a5ac18c3c935c67458? y
+override r--r--r--  afnanotb/staff for .git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391? y
+override r--r--r--  afnanotb/staff for .git/objects/f9/1e7a956d543bbc452e034f917eb4faacb2f38b? y
+override r--r--r--  afnanotb/staff for .git/objects/f9/1e082a2be7ff9dd58ab0cd699d2af18863c336? y
+override r--r--r--  afnanotb/staff for .git/objects/f9/a606869953ed04d8b2a68f09e69400ded10ec7? y
+override r--r--r--  afnanotb/staff for .git/objects/f9/79a9e8ca8ee21c254353dd4458abd4c6b3d40c? y
+override r--r--r--  afnanotb/staff for .git/objects/f9/76536f3febd727c46faf2f6ea64ed0dc7ef752? y
+override r--r--r--  afnanotb/staff for .git/objects/f9/1f7fbb8afe2decbdd8bc63406c8bb4e310e562? y
+override r--r--r--  afnanotb/staff for .git/objects/f0/4df404fc907195c0c6f33b861792a9f569a62b? y
+override r--r--r--  afnanotb/staff for .git/objects/f0/079c8ca84675ca0dcdca79d11cd04281d2999d? y
+override r--r--r--  afnanotb/staff for .git/objects/f0/585daf3dd7f3cfacd311fbfe5c5ea20d7129f3? y
+override r--r--r--  afnanotb/staff for .git/objects/f0/0cc21bc2f620e36644d6e10e290314a193323a? y
+override r--r--r--  afnanotb/staff for .git/objects/e8/c65c8e7705a6c1bdc9d647fcfd5863e526d699? y
+override r--r--r--  afnanotb/staff for .git/objects/e8/0ea885bcbde493dbc9dd95d6abbb43c9f8ef93?
+override r--r--r--  afnanotb/staff for .git/objects/e8/58d08b53a02f52ff07176867f760bb3680c336? y
+rm: .git/objects/e8: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/fa/c4447ccdac5d71964c0f0ba7c5b0b43f6e0a78? y
+override r--r--r--  afnanotb/staff for .git/objects/fa/bf19c7d5abc596b4cd3f8823cf8ac9239ed27a? y
+override r--r--r--  afnanotb/staff for .git/objects/fa/2a4038a8be32cfa69d07d1c7bcf8417bc23d74? y
+override r--r--r--  afnanotb/staff for .git/objects/fa/ef00eadde730d4bac2b5f470603ccb0e61f0ae? y
+override r--r--r--  afnanotb/staff for .git/objects/fa/c9e9c351be356fc258199ee8fcfd8e7c6ea095? y
+override r--r--r--  afnanotb/staff for .git/objects/fa/ba6fdaa52a6dc373576d33b07d8a1516d20fec? y
+override r--r--r--  afnanotb/staff for .git/objects/ff/acfe3367e2b47d9a72d9c3bbd96e81c39d74cd? y
+override r--r--r--  afnanotb/staff for .git/objects/ff/50da88b40e60d64f7f89a89a1c3b3586abd989? y
+override r--r--r--  afnanotb/staff for .git/objects/ff/9bbd0f717254ada67b4a151388f1b43900108e? y
+override r--r--r--  afnanotb/staff for .git/objects/ff/12a3a4adbffa9c1a569d3a85960b8fed90c415? y
+override r--r--r--  afnanotb/staff for .git/objects/ff/d9eb243a1e97300ceec60bb10f26d186d45400? y
+override r--r--r--  afnanotb/staff for .git/objects/c5/c4200a16a5a16f9a9a865d583a8d614c69f75a? y
+override r--r--r--  afnanotb/staff for .git/objects/c5/b83530fe4833eb8c9e3cfc178914a926284f2b? y
+override r--r--r--  afnanotb/staff for .git/objects/c5/ea41d3980fed348e8d757acba36718cc907dba? y
+override r--r--r--  afnanotb/staff for .git/objects/c5/a182e4069a013598fd64cbb9f3dc53166f330f? y
+override r--r--r--  afnanotb/staff for .git/objects/c5/8b0e9aa688ff5fedb3d175a71f872d931bb9c3? y
+override r--r--r--  afnanotb/staff for .git/objects/c5/a5699ccce8a1bfb194866794b10efeba32285a? y
+override r--r--r--  afnanotb/staff for .git/objects/c2/6afa3bc6ecb565f72c17a258393c97408c305e? y
+override r--r--r--  afnanotb/staff for .git/objects/f6/a199afa734fcc7538c2f803a93e36d8fe9bbe6? y
+override r--r--r--  afnanotb/staff for .git/objects/f6/dbadd163c718c3affa653f94ec5119eea54f34? y
+override r--r--r--  afnanotb/staff for .git/objects/f6/48311b5c90b01f181c600eaba0397d241fb96e? y
+override r--r--r--  afnanotb/staff for .git/objects/f6/6e29b1ea032caa3dd3647ad74c6c62660257e4? y
+override r--r--r--  afnanotb/staff for .git/objects/e9/65380d41786d05c88c21f98337ffe41ed614a7? y
+override r--r--r--  afnanotb/staff for .git/objects/e9/cfbde1c527dfd61a43c633f7d58f09566a585d? y
+override r--r--r--  afnanotb/staff for .git/objects/f1/a2e5d4581b40a923a3fe801dc815f5f15401b7? y
+override r--r--r--  afnanotb/staff for .git/objects/f1/216a6e83dc3d181beb17adbc01281c2e075683? y
+override r--r--r--  afnanotb/staff for .git/objects/f1/7544268b313268d36eb6e093795ac805c5c00c? y
+override r--r--r--  afnanotb/staff for .git/objects/f1/31f8cba7b4617f1ad79d6ec2b6ab6fa5684c5f? y
+override r--r--r--  afnanotb/staff for .git/objects/f1/9cedd5b57e0a876e3501079db5dbd391080a6a? y
+override r--r--r--  afnanotb/staff for .git/objects/e7/b8f343a33ab25045c86a44c32714aa1e0aa577? y
+override r--r--r--  afnanotb/staff for .git/objects/e7/dda2ffe0be077e7962db91c397fcb350615d99? y
+override r--r--r--  afnanotb/staff for .git/objects/e7/42d9fd9b2dd944314c597dbaac816dfb8eb7f9? y
+override r--r--r--  afnanotb/staff for .git/objects/e7/6891cada79588cd4d5736351181d9aadb63bba? y
+override r--r--r--  afnanotb/staff for .git/objects/e7/9d73dec8c8ffbd0c99431cc75a4a38dfb07b85? y
+override r--r--r--  afnanotb/staff for .git/objects/e7/de564c1b536ca95098ef01f4e04385a3216343? y
+override r--r--r--  afnanotb/staff for .git/objects/cb/dc987caefd61bc0f79a3ff365d8e3e8af1eda5? y
+override r--r--r--  afnanotb/staff for .git/objects/cb/510a3eaaa562c002f66cea3e267b2aca6aeb4a? y
+override r--r--r--  afnanotb/staff for .git/objects/cb/19b2a60f18623f7294a936ffa40683fb5bdd14? y
+override r--r--r--  afnanotb/staff for .git/objects/cb/04e406b83ba721e782f4eb045976444961a17c? y
+override r--r--r--  afnanotb/staff for .git/objects/cb/c98930a1517bfe55094d72abbb23599822e047? y
+override r--r--r--  afnanotb/staff for .git/objects/cb/e161d29d3d8190be892212594866aa15ee705c? y
+override r--r--r--  afnanotb/staff for .git/objects/f8/ce69c1028c6e583d61caad511b79f252ae0bbe? y
+override r--r--r--  afnanotb/staff for .git/objects/f8/2ef47100fb11636bbef1cf8812551b9ce14c72? y
+override r--r--r--  afnanotb/staff for .git/objects/f8/a37c32284f9aaf5e37b1126b98ee915f7a1cfa? \
+override r--r--r--  afnanotb/staff for .git/objects/f8/2fe6d393a3c7fed8b0d3b1a1a56b1df7ee3723? y
+override r--r--r--  afnanotb/staff for .git/objects/f8/362de3b1b015835029156667df0d89450d3912? y
+rm: .git/objects/f8: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/ce/80b47a1a82d3fab01d4fc4eadf4f7d63a7c84b? y
+override r--r--r--  afnanotb/staff for .git/objects/ce/5092c7a5b6e6c892fe3ac3a8f05f512eb2cb49? y
+override r--r--r--  afnanotb/staff for .git/objects/ce/400b4d97b81c90f08ff451922cd6b18a6c91dc? y
+override r--r--r--  afnanotb/staff for .git/objects/e0/70a591761b81043f19fa4c022c82ac445eeac0? y
+override r--r--r--  afnanotb/staff for .git/objects/e0/8baeaf47b9ff05f806c1660c57df0765d6ed3a? y
+override r--r--r--  afnanotb/staff for .git/objects/e0/865f576a6e7370531043f4e1504eb39083c80b? y
+override r--r--r--  afnanotb/staff for .git/objects/e0/aa9d96fe708343eadd94fa08a14dc0efaed090? y
+override r--r--r--  afnanotb/staff for .git/objects/e0/7472628dd9bfafd6178d7f43338f2a37f175b2? y
+override r--r--r--  afnanotb/staff for .git/objects/46/6475922733095249c9e3a6d702b3d0764e8093? y
+override r--r--r--  afnanotb/staff for .git/objects/46/2b453ba580978c41f3b6c0c87df8413be29c37? y
+override r--r--r--  afnanotb/staff for .git/objects/46/e998c23d0f7dd27f65d2e91790488823e5d293? y
+override r--r--r--  afnanotb/staff for .git/objects/46/e7ca23abaf3af2da169568998fff218ac19b20? y
+override r--r--r--  afnanotb/staff for .git/objects/2c/9502258e2f2a4d9e968c9271bb1d8d4de04b67? y
+override r--r--r--  afnanotb/staff for .git/objects/2c/50c2d561720a51837a493c37fc83012bc730d9? y
+override r--r--r--  afnanotb/staff for .git/objects/2c/b19b722298b541ece8ead9bb68b3a96cc3d7a6? y
+override r--r--r--  afnanotb/staff for .git/objects/2c/d33c50731a6cda6929074a43ea9b59499fee0a? y
+override r--r--r--  afnanotb/staff for .git/objects/2c/ee6f0dddc28028b5a60cf5cfcb5090d5ff1958? y
+override r--r--r--  afnanotb/staff for .git/objects/2c/166c24850e80c2d413a02bf194c9d54c820712? y
+override r--r--r--  afnanotb/staff for .git/objects/2c/9e6aff90f01202b179c4d6e75305ccfd80eb69? y
+override r--r--r--  afnanotb/staff for .git/objects/2c/f219e5af1e43f5f2ca08a92920a19cb5a08134? y
+override r--r--r--  afnanotb/staff for .git/objects/79/569d1b8e5cb49137bc9d953367a49f1c39e0e7? y
+override r--r--r--  afnanotb/staff for .git/objects/79/738f19db439ab62f46c4f424b259b75f82c2a1? y
+override r--r--r--  afnanotb/staff for .git/objects/79/434196cfe0e2526ed36fb853840da56c3cdcc6? y
+override r--r--r--  afnanotb/staff for .git/objects/2d/b4779099d76e686cd3236fe709323db9d0d8de? y
+override r--r--r--  afnanotb/staff for .git/objects/2d/02924bda79b500295b727e494c0561e183ba5b? y
+override r--r--r--  afnanotb/staff for .git/objects/2d/2d287e72d40ceeb77974d773ff110305053b70? y
+override r--r--r--  afnanotb/staff for .git/objects/41/ffc50f698a375ea1db7494d68164367282db99? y
+override r--r--r--  afnanotb/staff for .git/objects/41/395f8e3925777d697a77eada3a845443cecb07? y
+override r--r--r--  afnanotb/staff for .git/objects/41/445e97c1493217c14ef4d9727cd43d3ca0506b? y
+override r--r--r--  afnanotb/staff for .git/objects/83/0f32ec4c13eaa72fe4ad89f67effa2b561bdd4? y
+override r--r--r--  afnanotb/staff for .git/objects/83/bb696ae8bce5f8f9127dae862ec4d4d5a58aac? y
+override r--r--r--  afnanotb/staff for .git/objects/83/04aa0d5d2a6d7c34ea3cbd608894a731914253? y
+override r--r--r--  afnanotb/staff for .git/objects/83/59cd9579c223f9debd6e56f0fb2fa4bfd65ad6? y
+override r--r--r--  afnanotb/staff for .git/objects/83/b349d7d9a8dc4ad226c254cfa2e8da179a1b8d? y
+override r--r--r--  afnanotb/staff for .git/objects/1b/e3ea3236cd849fe65a50e3f336015342ce3452? y
+override r--r--r--  afnanotb/staff for .git/objects/1b/0265997da42545b77f2711194d4e3e80588ed5? y
+override r--r--r--  afnanotb/staff for .git/objects/1b/6c1e076c844523c0a3f5fa57b21cfb2475ae70? y
+override r--r--r--  afnanotb/staff for .git/objects/77/272ad9ede00e72e72b4d4ac27c635b9cbff5c2? y
+override r--r--r--  afnanotb/staff for .git/objects/77/2ebba6c0698b295d412e1e4dd28ffc5c82d650? y
+override r--r--r--  afnanotb/staff for .git/objects/77/0de8b15caa22db9936addb6dca78267ed19585? y
+override r--r--r--  afnanotb/staff for .git/objects/48/d5157edc025e094cfc7ede924814576c6f0d82? y
+override r--r--r--  afnanotb/staff for .git/objects/48/63bf821472fcf58a92674e536a35a99ed44c75? y
+override r--r--r--  afnanotb/staff for .git/objects/48/c90e29bab6bcc32a7c1ef4c30f05e9a3b6ede0? y
+override r--r--r--  afnanotb/staff for .git/objects/48/281dede35bdda9894744d0b9373b1a1b59a6e4? y
+override r--r--r--  afnanotb/staff for .git/objects/70/966b27099a9238b85ef74fd43100bc85cd5001? y
+override r--r--r--  afnanotb/staff for .git/objects/70/8644109127aa53291354f5ce717182b9eba49a? y
+override r--r--r--  afnanotb/staff for .git/objects/70/6b5f1b32ca55e777da9e8f35edc12f1311f2e6? y
+override r--r--r--  afnanotb/staff for .git/objects/70/d5a787b03cbf3c1b0896faa72df926c807ad35? y
+override r--r--r--  afnanotb/staff for .git/objects/1e/9024a1ed97a9edf4252f10201d388ccba59f4a? y
+override r--r--r--  afnanotb/staff for .git/objects/84/316ec9cd59f3b9343b3822c05bcdf5460f3aa2? y
+override r--r--r--  afnanotb/staff for .git/objects/84/2ed2cd4e71b8bb706abf7a2f95955c1aafb2dd? y
+override r--r--r--  afnanotb/staff for .git/objects/84/2440d5926d03b5d7d164abc6e59527f89779c0? y
+override r--r--r--  afnanotb/staff for .git/objects/84/53c869d446ab90b29a5fc695da9e255fccdeb8? y
+override r--r--r--  afnanotb/staff for .git/objects/84/293ccf82ad7f98bff6574660e85e38040f02f7? y
+override r--r--r--  afnanotb/staff for .git/objects/84/ed6a8305543457a2c3ff266e1b266848de128e? y
+override r--r--r--  afnanotb/staff for .git/objects/4a/edb079bebb5081b58f9dd2728389263516108a? y
+override r--r--r--  afnanotb/staff for .git/objects/4a/d91fb585e6cf0ce4b3afea23a3fb39f430258e? y
+override r--r--r--  afnanotb/staff for .git/objects/4a/c71962382dd646ab1ca5085b51cca717009b22? y
+override r--r--r--  afnanotb/staff for .git/objects/4a/57f0a848365d17a79e2020a9ce39d94b798920? y
+override r--r--r--  afnanotb/staff for .git/objects/24/3170fb2a45b31ddb17d036235191df85ac585e? y
+override r--r--r--  afnanotb/staff for .git/objects/23/d0346d5da86206ce06f42438ee3657bbfe0ef7? y
+override r--r--r--  afnanotb/staff for .git/objects/23/374a83aa9afa243c5446247e158199f476d63c? y
+override r--r--r--  afnanotb/staff for .git/objects/23/890a8c6c3183769edcf1979a44384ac87cc6ed? y
+override r--r--r--  afnanotb/staff for .git/objects/23/17395fd0acfbdb090b0b18a50e3a245b354418? y
+override r--r--r--  afnanotb/staff for .git/objects/4f/c5cbea3279c9aca34a8db58a9c7d5f21ce0cd1? y
+override r--r--r--  afnanotb/staff for .git/objects/4f/49a8c21353c1339c0b570d63d9f33805ded9bf? y
+override r--r--r--  afnanotb/staff for .git/objects/4f/0ba157974e171cabbc5299fbabd7a613887595? y
+override r--r--r--  afnanotb/staff for .git/objects/4f/5db842bfa33662d9dfae99d333305c8b34f805? y
+override r--r--r--  afnanotb/staff for .git/objects/4f/e00277ccd82ae86af614ce3b997390387730a9? y
+override r--r--r--  afnanotb/staff for .git/objects/4f/347d0ef066bdfcdd95dab0880880f78cbb85b9? y
+override r--r--r--  afnanotb/staff for .git/objects/4f/eaaa4395b1521dffa7541964e774a89478baba? y
+override r--r--r--  afnanotb/staff for .git/objects/8d/51907ad141cdd94059e0a8dfc6cbb51cb3542a? y
+override r--r--r--  afnanotb/staff for .git/objects/8d/62e7ba5afd9f6c5c3eb0589dedbde1726ecb0f? y
+override r--r--r--  afnanotb/staff for .git/objects/8d/ea74b3859b0f91aaf3db8730cc6405d3ac0137? y
+override r--r--r--  afnanotb/staff for .git/objects/8d/6d2d0290891853f4c27f843a0cd790b5c23de3? y
+override r--r--r--  afnanotb/staff for .git/objects/15/52e55ac9b69e06e9f4b4b2dd39c6990775f076? y
+override r--r--r--  afnanotb/staff for .git/objects/15/759a57d25e476ea744adefb9d8a742c81f660d? y
+override r--r--r--  afnanotb/staff for .git/objects/15/256fbb7c57cf61e44aaa17ee0926637748b38d? y
+override r--r--r--  afnanotb/staff for .git/objects/15/a359cc4f239c6dfba13981d9b4056c5106bacf? y
+override r--r--r--  afnanotb/staff for .git/objects/12/103e7b684e3483b9d94c7912f8501938cc9ae2? y
+override r--r--r--  afnanotb/staff for .git/objects/12/18977421082abdff21daaa09983b5368d0aaa1? y
+override r--r--r--  afnanotb/staff for .git/objects/12/ede8e07ec304e068123bf0fec39d3f0898142e? y
+override r--r--r--  afnanotb/staff for .git/objects/12/3e8534f3073a7478d1ff44862be7f60bdacbcc? y
+override r--r--r--  afnanotb/staff for .git/objects/12/290b717ec313e4bdaa99bf9b48f1f4f5124bc4? y
+override r--r--r--  afnanotb/staff for .git/objects/8c/9bc19b6bcdf7d6bb67a1251f740817bc490b75? y
+override r--r--r--  afnanotb/staff for .git/objects/8c/7d195f836c75c948f1acff9e2d58c48dc3d080? y
+override r--r--r--  afnanotb/staff for .git/objects/8c/3386ffe3ba44b53f7aefe097793b7f4c8efa29? y
+override r--r--r--  afnanotb/staff for .git/objects/85/2abad8a25cac4228c81487248b53354f3be738? y
+override r--r--r--  afnanotb/staff for .git/objects/85/b8a32588926c495b9f581bcf2128501d594d2c? y
+override r--r--r--  afnanotb/staff for .git/objects/85/bb33a8a51a7156c35ae15d7da0ec72a9d3b993? y
+override r--r--r--  afnanotb/staff for .git/objects/85/388069bb0e54ef88991c9bfae689d7db3edc6a? y
+override r--r--r--  afnanotb/staff for .git/objects/1d/25229b1491969d53889b423e8c81ce6d1860b9? y
+override r--r--r--  afnanotb/staff for .git/objects/1d/46b2b4778f2fa33406bbb8c423682ded969547? y
+override r--r--r--  afnanotb/staff for .git/objects/1d/a7cbb24ea27f594455e8cd5c2c07dd84f5a4fa? y
+override r--r--r--  afnanotb/staff for .git/objects/71/24bf2b269167c85e37c1fb3a41ab3b0d732cc1? y
+override r--r--r--  afnanotb/staff for .git/objects/71/8a8ebdde0a6faae2e64044cca8fe1d3717807c? y
+override r--r--r--  afnanotb/staff for .git/objects/71/524d00dcac1dd494f5dd88bc5b5f4d43604740? y
+override r--r--r--  afnanotb/staff for .git/objects/76/e61f09783d619bc6a2e8599dddc409c18d8e11? y
+override r--r--r--  afnanotb/staff for .git/objects/76/e4a8743084ba45a007b694c3406c22497fbb59? y
+override r--r--r--  afnanotb/staff for .git/objects/76/b640f31a3ff1b093c098f039e382e379bf5198? y
+override r--r--r--  afnanotb/staff for .git/objects/1c/49e0bb913ff39b40b1b97a2582271e35851daa? y
+override r--r--r--  afnanotb/staff for .git/objects/1c/d5eeb95d70063bdd3e0766605272d7a366c4fc? y
+override r--r--r--  afnanotb/staff for .git/objects/1c/39452c0b993c51162b833f26065ccd4fdaec1c? y
+override r--r--r--  afnanotb/staff for .git/objects/1c/21c1ed2a5091216b2e9d48403b0cf4f44c9cf9? y
+override r--r--r--  afnanotb/staff for .git/objects/1c/01f32aa07b1af91f7f50b2f29cc0a4f9ea4979? y
+override r--r--r--  afnanotb/staff for .git/objects/1c/6c7074b2f1ae09f63b4b75ebede273bcc624df? y
+override r--r--r--  afnanotb/staff for .git/objects/1c/5b9c15869c970a8bc9d2d6295bcfa981743f2a? y
+override r--r--r--  afnanotb/staff for .git/objects/82/c0fd41a54d2f57ef61a7cf9c3f26523d75d616? y
+override r--r--r--  afnanotb/staff for .git/objects/82/24ea0ace39f8e30ca271150004b71a87f10eb4? y
+override r--r--r--  afnanotb/staff for .git/objects/49/9118c332e4129da73be6b4a163d241164c5f23? y
+override r--r--r--  afnanotb/staff for .git/objects/49/57cde6177b33d5f747ecda085d1d8a7f7a8738? y
+override r--r--r--  afnanotb/staff for .git/objects/49/c986970bcd40fc2b47b01136ba948a340dffd5? y
+override r--r--r--  afnanotb/staff for .git/objects/40/c930528796001877d61e25aaa9fa1eab7059ba? y
+override r--r--r--  afnanotb/staff for .git/objects/40/33f0506e52faff60259ffc4ffb470e426a4cb1? y
+override r--r--r--  afnanotb/staff for .git/objects/40/6e00837402cfda63cb653c182d55408aee3cfc? y
+override r--r--r--  afnanotb/staff for .git/objects/2e/2b0f80f546953b640523d566d63480a43e23e3? y
+override r--r--r--  afnanotb/staff for .git/objects/2e/3502bbec3bfbc98a94873879f32175d6300406? yy
+override r--r--r--  afnanotb/staff for .git/objects/2b/a9b6c20af1589da1ada235ed5850489ee9f256? y
+override r--r--r--  afnanotb/staff for .git/objects/2b/3c2875ec1930f828d76ac57e3a4c248409c616? y
+override r--r--r--  afnanotb/staff for .git/objects/2b/bd0361f87b83c7e4dc80589d589f6232ee4174? y
+override r--r--r--  afnanotb/staff for .git/objects/47/209bb0ab206675985b4a3f87968c3c5f09f9aa? y
+override r--r--r--  afnanotb/staff for .git/objects/47/477fa9a3ae42f13e539f4566f96383bdca18ef? y
+override r--r--r--  afnanotb/staff for .git/objects/47/38ad4a8927503fc7cabb6e5f026ec6dbd97c30? y
+override r--r--r--  afnanotb/staff for .git/objects/47/a6f7e6004c7e70e306ff9945a886dd90e503fe? y
+override r--r--r--  afnanotb/staff for .git/objects/47/33bde3f176a5a89e0def796ee3dc2235310a50? y
+override r--r--r--  afnanotb/staff for .git/objects/47/fb27f7de0e830cfb7f504cec132010c4b37dd1? y
+override r--r--r--  afnanotb/staff for .git/objects/47/afdf6b39c7ad97096e78cd5b43589f7574dcfb? y
+override r--r--r--  afnanotb/staff for .git/objects/47/c8b5f404ae8b7322790868b47da85e098ed0de? y
+override r--r--r--  afnanotb/staff for .git/objects/78/fa800eb62900a6e0e0c9dfae0b69ccf6abb6dd? y
+override r--r--r--  afnanotb/staff for .git/objects/78/30c183f3d62be49a7270076142bf8ea46a15f4? y
+override r--r--r--  afnanotb/staff for .git/objects/78/de3bc6838f78552d5940f688c62837cc7d4be1? y
+override r--r--r--  afnanotb/staff for .git/objects/78/b24d57dbe4fd7dd998616a0cd3bc5c69cc4b92? y
+override r--r--r--  afnanotb/staff for .git/objects/8b/7d38064063d83f2ec58991b63c467dab36a043?
+override r--r--r--  afnanotb/staff for .git/objects/8b/e5f82a65a46e6e33e8e1155728445f3aa2a9eb? y
+rm: .git/objects/8b: Directory not empty
+override r--r--r--  afnanotb/staff for .git/objects/13/e49328e889e75b0b79b8753e743b5fb177fa55? y
+override r--r--r--  afnanotb/staff for .git/objects/13/3b785d1937baf907fc9d1d5b678b1565db6700? y
+override r--r--r--  afnanotb/staff for .git/objects/13/1a567bfd3ece9b9708eb278bc81e939a5ec006? y
+override r--r--r--  afnanotb/staff for .git/objects/13/3d49d968339f899ddb0dbefc57c72ca776bfee? y
+override r--r--r--  afnanotb/staff for .git/objects/7f/32312cdb79ad62dc4424a6e4c7e6a06c4692e4? y
+override r--r--r--  afnanotb/staff for .git/objects/7f/76d78b42053f669fe63e6f44533474a1e89123? y
+override r--r--r--  afnanotb/staff for .git/objects/7f/9d18d097d1bcccb32e6d5743ac4af593170b6f? y
+override r--r--r--  afnanotb/staff for .git/objects/7a/55a1df78cf53a8cf0be36b5da60e2bae993e7a? y
+override r--r--r--  afnanotb/staff for .git/objects/7a/c10109703bf85bd1b7e0a95ba2431c607180ac? y
+override r--r--r--  afnanotb/staff for .git/objects/7a/f08333cd065378bd74ab2b9a9573ee0f6541ce? y
+override r--r--r--  afnanotb/staff for .git/objects/7a/5548112b8596603a434888fd378748c636a289? y
+override r--r--r--  afnanotb/staff for .git/objects/7a/9023cbfe32f3518b01685e7a9448210b0e34f8? y
+override r--r--r--  afnanotb/staff for .git/objects/14/a9d88c996e0840fb205c1771c2613b6feff24a? y
+override r--r--r--  afnanotb/staff for .git/objects/14/28e2846f39fea45b660ffcc33e8a70e9cc4887? y
+override r--r--r--  afnanotb/staff for .git/objects/14/04182399c71bf00989ab9ce328b9ac635c1e64? y
+override r--r--r--  afnanotb/staff for .git/objects/14/38f0e723e7e886c27524a2b498b8e93ce8ad6c? y
+override r--r--r--  afnanotb/staff for .git/objects/8e/3677676e37d66c40ce2374b41fe64bae958df3? y
+override r--r--r--  afnanotb/staff for .git/objects/8e/54f78a95760809ab7ce982bc6b10a2ab4f80e7? y
+override r--r--r--  afnanotb/staff for .git/objects/8e/1c70798d592d35a263460cb606ba8a2100c302? y
+override r--r--r--  afnanotb/staff for .git/objects/22/b6ad5134489c74bb9a5f8fb9cb25a390e2caad? y
+override r--r--r--  afnanotb/staff for .git/objects/25/62329e50a50ced7e6404c170f43aa66ec0189a? y
+override r--r--r--  afnanotb/staff for .git/objects/25/81e30ed64fe7daa38e67bbdf3c5d50a124a410? y
+override r--r--r--  afnanotb/staff for .git/objects/25/fe7de09eb2b918994d1e9a00b49d6d382d9d0e? y
+override r--r--r--  afnanotb/staff for .git/objects/25/02a24682dbfeea719f36673da491088397fe3b? y
+rm: .git/objects: Directory not empty
+rm: .git: Directory not empty
+afnanotb ~
+$ y
+-bash: y: command not found
+afnanotb ~
+$ y
+-bash: y: command not found
+afnanotb ~
+$ la
+-bash: la: command not found
+afnanotb ~
+$ ls
+Applications		Music			js
+Desktop			Pictures		my-travel-plans
+Documents		Public			my_project
+Downloads		course-git-blog-project	new-git-project
+Library			css			readme.html
+Movies			index.html		udacity-git-course
+afnanotb ~
+$ cd desktop
+afnanotb desktop
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+afnanotb desktop
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+afnanotb desktop
+$ git clone https://github.com/afnanotb/pdsnd_github.git
+Cloning into 'pdsnd_github'...
+remote: Enumerating objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 3
+Unpacking objects: 100% (3/3), done.
+afnanotb desktop
+$ ls
+Connect - Programming for Data Science - Udacity.html
+Screen Shot 2020-12-19 at 3.10.50 PM.png
+Screen Shot 2020-12-19 at 3.11.03 PM.png
+UE
+UNADJUSTEDNONRAW_thumb_61f.jpg
+XX
+afnanRebort.pdf
+bikeshare2.py
+download.jpeg
+ex windows function.docx
+exams
+file52_1594905499.pdf
+key terms git vocab.pdf
+khbrat
+marhabi-ahat-1.MP3
+pdsnd_github
+pic
+print
+project1
+project2
+sql project.pdf
+stat z 2
+untitled folder
+y.pdf
+~$flection 2.docx
+~$mersion reflection 1.docx
+~$nan alotaibi action plan.docx
+اول متوسط
+حاسب 2 م
+حاسب 3 م
+حاسب الي 1 ث
+مراجعة اول ثانوي القسم العملي لمادة الحاسب الالي.docx
+مراجعة اول متوسط القسم العملي لمادة الحاسب الالي.docx
+مراجعة اول ثانوي القسم العملي لمادة الحاسب الالي.pdf
+مراجعة اول متوسط القسم العملي لمادة الحاسب الالي.pdf
+مراجعة ثالث متوسط القسم العملي لمادة الحاسب الالي.docx
+مراجعة ثاني متوسط القسم العملي لمادة الحاسب الالي.docx
+مراجعة ثالث متوسط القسم العملي لمادة الحاسب الالي.pdf
+مراجعة ثاني متوسط القسم العملي لمادة الحاسب الالي.pdf
+المعيار ٧+٨+٩+١٠.pdf
+afnanotb desktop
+$ cd project2
+afnanotb project2
+$ ls
+bikeshare.py
+readme.rtf
+مدرستي | استعراض الاختبار.pdf
+afnanotb project2
+$ mv bikeshare.py /Users/afnanotb/Desktop/pdsnd_github
+afnanotb project2
+$ mv readme.rtf /Users/afnanotb/Desktop/pdsnd_github
+afnanotb project2
+$ cd /Users/afnanotb/Desktop/pdsnd_github
+afnanotb (master) pdsnd_github
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	bikeshare.py
+	readme.rtf
+
+nothing added to commit but untracked files present (use "git add" to track)
+afnanotb (master) pdsnd_github
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+afnanotb (master) pdsnd_github
+$ git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+afnanotb (master) pdsnd_github
+$ git add .
+afnanotb (master +) pdsnd_github
+$ git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+afnanotb (master +) pdsnd_github
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   bikeshare.py
+	new file:   readme.rtf
+
+afnanotb (master +) pdsnd_github
+$ git commit -m "feat adding bikeshare files code"
+[master 22dfb60] feat adding bikeshare files code
+ 3 files changed, 345 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 bikeshare.py
+ create mode 100644 readme.rtf
+afnanotb (master) pdsnd_github
+$ git branch documentation
+afnanotb (master) pdsnd_github
+$ git checkout documentation
+Switched to branch 'documentation'
+afnanotb (documentation) pdsnd_github
+$ git touch README.md
+git: 'touch' is not a git command. See 'git --help'.
+afnanotb (documentation) pdsnd_github
+$ vim README.md
+afnanotb (documentation *) pdsnd_github
+$ git add README.md
+afnanotb (documentation +) pdsnd_github
+$ git status
+On branch documentation
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+afnanotb (documentation +) pdsnd_github
+$  git commit -m "docs creating documentation"
+[documentation bfb6358] docs creating documentation
+ 1 file changed, 2 deletions(-)
+afnanotb (documentation) pdsnd_github
+$ git push pdsnd_github
+fatal: 'pdsnd_github' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+afnanotb (documentation) pdsnd_github
+$ git push
+fatal: The current branch documentation has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin documentation
+
+afnanotb (documentation) pdsnd_github
+$  git push --set-upstream origin documentation
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 4.12 KiB | 4.12 MiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'documentation' on GitHub by visiting:
+remote:      https://github.com/afnanotb/pdsnd_github/pull/new/documentation
+remote:
+To https://github.com/afnanotb/pdsnd_github.git
+ * [new branch]      documentation -> documentation
+Branch 'documentation' set up to track remote branch 'documentation' from 'origin'.
+afnanotb (documentation) pdsnd_github
+$ git push
+Everything up-to-date
+afnanotb (documentation) pdsnd_github
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+afnanotb (master) pdsnd_github
+$ git checkout documentation
+Switched to branch 'documentation'
+Your branch is up to date with 'origin/documentation'.
+afnanotb (documentation) pdsnd_github
+$ vim readme.rtf
+afnanotb (documentation) pdsnd_github
+$ vim readme.md
+afnanotb (documentation *) pdsnd_github
+$ git status
+On branch documentation
+Your branch is up to date with 'origin/documentation'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+afnanotb (documentation *) pdsnd_github
+$ git add .
+afnanotb (documentation +) pdsnd_github
+$ git status
+On branch documentation
+Your branch is up to date with 'origin/documentation'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+afnanotb (documentation +) pdsnd_github
+$ git commit -m "feat, changin featuers in the file"
+[documentation 89e0b55] feat, changin featuers in the file
+ 1 file changed, 5 insertions(+), 6 deletions(-)
+afnanotb (documentation) pdsnd_github
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 401 bytes | 401.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/afnanotb/pdsnd_github.git
+   bfb6358..89e0b55  documentation -> documentation
+afnanotb (documentation) pdsnd_github
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+afnanotb (master) pdsnd_github
+$ git checkout documentation
+Switched to branch 'documentation'
+Your branch is up to date with 'origin/documentation'.
+afnanotb (documentation) pdsnd_github
+$ vim bikeshare.py
+afnanotb (documentation *) pdsnd_github
+$ vim readme.md
+afnanotb (documentation *) pdsnd_github
+$ git add .
+afnanotb (documentation +) pdsnd_github
+$ git status
+On branch documentation
+Your branch is up to date with 'origin/documentation'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+	modified:   bikeshare.py
+
+afnanotb (documentation +) pdsnd_github
+$ git commit -m "docs changing some comments"
+[documentation aee4a43] docs changing some comments
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+afnanotb (documentation) pdsnd_github
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+afnanotb (master) pdsnd_github
+$ git log --oneline
+22dfb60 (HEAD -> master) feat adding bikeshare files code
+46a5819 (origin/master, origin/HEAD) Create README.md
+afnanotb (master) pdsnd_github
+$ git branch refactoring
+afnanotb (master) pdsnd_github
+$ git checkout refactoring
+Switched to branch 'refactoring'
+afnanotb (refactoring) pdsnd_github
+$ vim bikeshare.py
+afnanotb (refactoring *) pdsnd_github
+$ vim readme.md
+afnanotb (refactoring *) pdsnd_github
+$ git add .
+afnanotb (refactoring +) pdsnd_github
+$ git status
+On branch refactoring
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+	modified:   bikeshare.py
+
+afnanotb (refactoring +) pdsnd_github
+$ git commit -m "refactoring the bikeshare file and readme file too"
+[refactoring f67070e] refactoring the bikeshare file and readme file too
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+afnanotb (refactoring) pdsnd_github
+$ git push
+fatal: The current branch refactoring has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin refactoring
+
+afnanotb (refactoring) pdsnd_github
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+afnanotb (master) pdsnd_github
+$ git log
+commit 22dfb608f2ee85cea44c55261b3d9f53bb5f1472 (HEAD -> master)
+Author: afnan-eid-alotaibi <a.e.otb@hotmail.com>
+Date:   Sat Dec 19 21:12:52 2020 +0300
+
+    feat adding bikeshare files code
+
+commit 46a5819dc927e9405b589b41529d76b86d41ec36 (origin/master, origin/HEAD)
+Author: Ruchi B <41761551+rbUdacProjects@users.noreply.github.com>
+Date:   Tue Aug 14 15:26:00 2018 -0700
+
+    Create README.md
+afnanotb (master) pdsnd_github
+$ git log --online
+fatal: unrecognized argument: --online
+afnanotb (master) pdsnd_github
+$ git log --oneline
+22dfb60 (HEAD -> master) feat adding bikeshare files code
+46a5819 (origin/master, origin/HEAD) Create README.md
+afnanotb (master) pdsnd_github
+$ git pull
+Already up to date.
+afnanotb (master) pdsnd_github
+$ git merge refactoring
+Updating 22dfb60..f67070e
+Fast-forward
+ README.md    | 2 +-
+ bikeshare.py | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+afnanotb (master) pdsnd_github
+$ vim readme.md
+afnanotb (master) pdsnd_github
+$ vim bikeshare.py
+afnanotb (master) pdsnd_github
+$ git merge documentation
+Auto-merging bikeshare.py
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+afnanotb (master *+|MERGING) pdsnd_github
+$ vim readme.md
+afnanotb (master *+|MERGING) pdsnd_github
+$ vim bikeshare.py
+afnanotb (master *+|MERGING) pdsnd_github
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+	modified:   bikeshare.py
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   README.md
+
+afnanotb (master *+|MERGING) pdsnd_github
+$ git add .
+afnanotb (master +|MERGING) pdsnd_github
+$ git commit -m "test to check the files"
+[master ea34e82] test to check the files
+afnanotb (master) pdsnd_github
+$ git push
+Enumerating objects: 18, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.47 KiB | 1.47 MiB/s, done.
+Total 12 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
+To https://github.com/afnanotb/pdsnd_github.git
+   46a5819..ea34e82  master -> master
+afnanotb (master) pdsnd_github
+$

@@ -35,7 +35,7 @@ def get_filters():
 
     print(f"\nThe selected city is {city.title()}.")
 
-    #Make a dictionary for storing all the months including the 'all' option
+    #Make change  on the  dictionary for storing all the months including the 'all' option
     MONTH_DATA = {'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6, 'all': 7}
     month = ''
     while month not in MONTH_DATA.keys():
